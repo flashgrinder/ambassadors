@@ -1,0 +1,18 @@
+.partners__outer {
+    overflow: hidden;
+}
+
+.partners__items {
+    display: flex;
+    align-items: center;
+}
+
+.partners__item {
+    display: block;
+    max-height: 100px;
+    margin-left: 105px;
+}
+
+.partners__logo {
+    max-height: 100px;
+}

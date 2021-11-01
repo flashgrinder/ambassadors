@@ -154,8 +154,8 @@ img {
   background-color: var(--color-white);
 }
 
-.bg--dark {
-  background-color: var(--color-dark);
+.bg--white-milk {
+  background-color: var(--color-white-milk);
 }
 
 /* Block-padding */
@@ -553,6 +553,29 @@ img {
   padding-bottom: 2px;
   border-bottom: 1px solid transparent;
   transition: border-bottom 0.2s ease-in-out;
+}
+
+/* Partners */
+
+.partners__outer {
+  overflow: hidden;
+}
+
+.partners__items {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.partners__item {
+  display: block;
+  max-height: 100px;
+  margin-left: 105px;
+}
+
+.partners__logo {
+  max-height: 100px;
 }
 
 /* Contacts */
