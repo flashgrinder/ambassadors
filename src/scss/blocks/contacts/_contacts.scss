@@ -1,0 +1,33 @@
+.contacts {
+    padding: 95px 0;
+    background: var(--gradient-green), url('../img/contacts/contacts-bg.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.contacts__items {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__item {
+    display: inline-flex;
+    align-items: center;
+}
+
+.contacts__item ~ .contacts__item {
+    margin-top: 40px;
+}
+
+.contacts__svg {
+    display: block;
+}
+
+.contacts__name,
+.contacts__link {
+    margin-left: 25px;
+}
+
+.contacts__link {
+    text-decoration: none;
+    cursor: pointer;
+}
