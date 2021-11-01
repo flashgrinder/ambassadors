@@ -1,0 +1,36 @@
+.button {
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 18px;
+    border-radius: 25px;
+    padding: 10px 35px;
+    z-index: 10;
+    transition: background .2s ease-in-out, color .2s ease-in-out, border .2s ease-in-out;
+}
+
+.button--big {
+    padding: 15px 35px;
+}
+
+.button-transparent,
+.button--green {
+    border: 1px solid transparent;
+}
+
+.button--green {
+    color: var(--color-white);
+    background: var(--color-green-light);
+}
+
+.button--green:hover {
+    color: var(--color-green-light);
+    background: var(--color-white);
+    border: 1px solid var(--color-green-light);
+}
