@@ -1,0 +1,476 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Light.eot");
+  src: url("../fonts/Montserrat/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Regular.eot");
+  src: url("../fonts/Montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Medium.eot");
+  src: url("../fonts/Montserrat/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Bold.eot");
+  src: url("../fonts/Montserrat/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Bold.eot");
+  src: url("../fonts/Montserrat/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik/Rubik-Light.eot");
+  src: url("../fonts/Rubik/Rubik-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik/Rubik-Light.woff2") format("woff2"), url("../fonts/Rubik/Rubik-Light.woff") format("woff"), url("../fonts/Rubik/Rubik-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik/Rubik-Regular.eot");
+  src: url("../fonts/Rubik/Rubik-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik/Rubik-Regular.woff") format("woff"), url("../fonts/Rubik/Rubik-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik/Rubik-Bold.eot");
+  src: url("../fonts/Rubik/Rubik-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik/Rubik-Bold.woff2") format("woff2"), url("../fonts/Rubik/Rubik-Bold.woff") format("woff"), url("../fonts/Rubik/Rubik-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Variables */
+
+:root {
+  --color-white: #FFFFFF;
+  --color-black: #121212;
+  --color-dark-gray: #555555;
+  --color-green-light: #1EBC7F;
+  --font-montserrat: "Montserrat" Arial, sans-serif;
+  --font-rubik: "Rubik", Arial, sans-serif;
+}
+
+/* Base */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Animation */
+
+/* Base Classes */
+
+/* Containers */
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.container-full {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.container-page {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Hide */
+
+.hide {
+  display: none !important;
+}
+
+/* Position */
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+/* Background */
+
+.bg--white {
+  background-color: var(--color-white);
+}
+
+.bg--dark {
+  background-color: var(--color-dark);
+}
+
+/* Links */
+
+.link {
+  text-decoration: none;
+  transition: ease 0.3s;
+}
+
+.link:hover {
+  color: var(--color-orange);
+}
+
+/* Title */
+
+.title {
+  font-family: var(--font-montserrat);
+  font-style: normal;
+  margin: 0;
+}
+
+.title--big {
+  font-size: calc(25px + 10 * ((100vw - 320px) / 1120));
+}
+
+@media screen and (min-width: 1440px) {
+
+  .title--big {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .title--big {
+    font-size: 25px;
+  }
+}
+
+.title--large {
+  font-size: calc(22px + 8 * ((100vw - 1024px) / 416));
+}
+
+@media screen and (min-width: 1440px) {
+
+  .title--large {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .title--large {
+    font-size: 22px;
+  }
+}
+
+.title--medium {
+  font-size: calc(18px + 4 * ((100vw - 1024px) / 416));
+}
+
+@media screen and (min-width: 1440px) {
+
+  .title--medium {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .title--medium {
+    font-size: 18px;
+  }
+}
+
+.title--small {
+  font-size: 16px;
+}
+
+.title--tiny {
+  font-size: 12px;
+}
+
+.title--white {
+  color: var(--color-white);
+}
+
+.title--black {
+  color: var(--color-black);
+}
+
+.title--dark-gray {
+  color: var(--color-dark-gray);
+}
+
+.title--green-light {
+  color: var(--color-green-light);
+}
+
+.title--w-light {
+  font-weight: 300;
+}
+
+.title--w-regular {
+  font-weight: normal;
+}
+
+.title--w-medium {
+  font-weight: 500;
+}
+
+.title--w-bold {
+  font-weight: 700;
+}
+
+.title--w-extrabold {
+  font-weight: 800;
+}
+
+.title--uppercase {
+  text-transform: uppercase;
+}
+
+.title--indent {
+  margin: 0 0 30px 50px;
+}
+
+/* Text */
+
+.text {
+  font-family: var(--font-rubik);
+  font-style: normal;
+  margin: 0;
+}
+
+.text--white {
+  color: var(--color-white);
+}
+
+.text--black {
+  color: var(--color-black);
+}
+
+.text--dark-gray {
+  color: var(--color-dark-gray);
+}
+
+.text--green-light {
+  color: var(--color-green-light);
+}
+
+.text--big {
+  font-size: calc(18px + 2 * ((100vw - 320px) / 880));
+}
+
+@media screen and (min-width: 1200px) {
+
+  .text--big {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .text--big {
+    font-size: 18px;
+  }
+}
+
+.text--large {
+  font-size: calc(16px + 2 * ((100vw - 320px) / 880));
+}
+
+@media screen and (min-width: 1200px) {
+
+  .text--large {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .text--large {
+    font-size: 16px;
+  }
+}
+
+.text--normal {
+  font-size: calc(14px + 2 * ((100vw - 320px) / 880));
+}
+
+@media screen and (min-width: 1200px) {
+
+  .text--normal {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .text--normal {
+    font-size: 14px;
+  }
+}
+
+.text--small {
+  font-size: 12px;
+}
+
+.text--w-light {
+  font-weight: 300;
+}
+
+.text--w-regular {
+  font-weight: normal;
+}
+
+.text--w-bold {
+  font-weight: bold;
+}
+
+.text--uppercase {
+  text-transform: uppercase;
+}
+
+/* ANOTHER MODULES */
+
+/* Swiper Slider Examples*/
+
+/* ANOTHER MODULES */
+
+/* Blocks */
+
+/* Page */
+
+.page {
+  margin: 0;
+  font-family: var(--font-rubik);
+  font-size: 16px;
+  line-height: 1.2;
+  overflow-x: hidden;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: stretch;
+          align-items: stretch;
+}
+
+.page__container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  -webkit-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+/* ANOTHER MODULES */
+
+/* ANOTHER MODULES */
+
+/* ANOTHER MODULES */
+
+/* Swiper Slider Examples*/
+
+/* ANOTHER MODULES */
+
+/* ANOTHER MODULES */
+
+/* ANOTHER MODULES */
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
+  .hide-tablet {
+    display: none !important;
+  }
+
+  .title--indent {
+    margin: 0 0 20px 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hide-tabletSM {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .container-full {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hide-mobile {
+    display: none !important;
+  }
+
+  .title--indent {
+    margin: 0 0 20px 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .container-full {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

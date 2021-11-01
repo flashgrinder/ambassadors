@@ -8,18 +8,24 @@
 	@include wrapper-full();
 }
 
+.container-page {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 /* Hide */
 
 .hide {
     display: none !important;
 }
 
-.hide-medium {
-	@include medium(display, none !important);
-}
-
 .hide-tablet {
 	@include tablet(display, none !important);
+}
+
+.hide-tabletSM {
+	@include tabletSM(display, none !important);
 }
 
 .hide-mobile {
@@ -65,15 +71,15 @@
 /* Title */
 
 .title {
-    font-family: var(--font-gotham);
+    font-family: var(--font-montserrat);
     font-style: normal;
     margin: 0;
     &--big {
-        font-size: responsive 16px 45px;
+        font-size: responsive 25px 35px;
         font-range: 320px 1440px;
     }
     &--large {
-        font-size: responsive 20px 26px;
+        font-size: responsive 22px 30px;
         font-range: 1024px 1440px;
     }
     &--medium {
@@ -86,29 +92,32 @@
     &--tiny {
         font-size: 12px;
     }
-    &--orange {
-        color: var(--color-orange);
-    }
     &--white {
-        color: var(--color-white);
+		color: var(--color-white);
 	}
-    &--black-gray {
-		color: var(--color-black-gray); 
+    &--black {
+        color: var(--color-black);
+	}
+    &--dark-gray {
+        color: var(--color-dark-gray);
+	}
+    &--green-light {
+        color: var(--color-green-light);
 	}
 	&--w-light {
 		font-weight: 300;
     }
-    &--w-normal {
-		font-weight: 400;
+    &--w-regular {
+		font-weight: normal;
 	}
     &--w-medium {
 		font-weight: 500;
 	}
 	&--w-bold {
-		font-weight: bold;
+		font-weight: 700;
 	}
-	&--w-black {
-		font-weight: 900;
+	&--w-extrabold {
+		font-weight: 800;
 	}
 	&--uppercase {
 		text-transform: uppercase;
@@ -124,35 +133,35 @@
 /* Text */
 
 .text {
-    font-family: var(--font-roboto);
+    font-family: var(--font-rubik);
     font-style: normal;
     margin: 0;
-	&--black-gray {
-		color: var(--color-black-gray); 
-	}
-	&--orange {
-		color: var(--color-orange);
-	}
 	&--white {
 		color: var(--color-white);
 	}
+    &--black {
+        color: var(--color-black);
+	}
+    &--dark-gray {
+        color: var(--color-dark-gray);
+	}
+    &--green-light {
+        color: var(--color-green-light);
+	}
 	&--big {
-        font-size: responsive 20px 30px;
-        font-range: 320px 1440px;
+        font-size: responsive 18px 20px;
+        font-range: 320px 1200px;
 	}
 	&--large {
-        font-size: responsive 14px 22px;
-        font-range: 320px 1440px;
+        font-size: responsive 16px 18px;
+        font-range: 320px 1200px;
 	}
 	&--normal {
-        font-size: responsive 12px 16px;
-        font-range: 1024px 1440px;
+        font-size: responsive 14px 16px;
+        font-range: 320px 1200px;
 	}
 	&--small {
 		font-size: 12px;
-	}
-	&--tiny {
-		font-size: 10px;
 	}
 	&--w-light {
 		font-weight: 300;
@@ -160,18 +169,9 @@
 	&--w-regular {
 		font-weight: normal;
 	}
-	&--w-medium {
-		font-weight: 500;
-	}
 	&--w-bold {
-		font-weight: 700;
-    }
-	&--w-black {
-		font-weight: 900;
-    }
-    &--italic {
-        font-style: italic;
-    }
+		font-weight: bold;
+	}
     &--uppercase {
 		text-transform: uppercase;
 	}
