@@ -409,6 +409,7 @@ img {
           flex-direction: column;
   -webkit-align-items: stretch;
           align-items: stretch;
+  padding-top: 105px;
 }
 
 .page__container {
