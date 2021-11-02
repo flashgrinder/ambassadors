@@ -15,6 +15,10 @@
     transition: background .2s ease-in-out, color .2s ease-in-out, border .2s ease-in-out, box-shadow .2s ease-in-out;
 }
 
+.button--big {
+    padding: 15px 35px;
+}
+
 .button__svg-icon {
     display: block;
     fill: var(--color-white);

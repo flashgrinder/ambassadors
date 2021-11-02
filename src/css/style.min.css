@@ -440,6 +440,10 @@ img {
   transition: background 0.2s ease-in-out, color 0.2s ease-in-out, border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
+.button--big {
+  padding: 15px 35px;
+}
+
 .button__svg-icon {
   display: block;
   fill: var(--color-white);

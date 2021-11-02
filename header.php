@@ -50,7 +50,7 @@
                         </div>
                     </div>
                     <div class="header__actions">
-                        <a href="" class="header__btn button button--green">
+                        <a href="" class="header__btn button button--green button--big">
                             Присоединиться к проекту
                         </a>
                     </div>
