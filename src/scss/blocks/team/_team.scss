@@ -1,0 +1,5 @@
+.team__items {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, .5fr));
+    grid-gap: 45px 86px;
+}
