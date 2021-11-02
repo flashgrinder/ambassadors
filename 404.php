@@ -1,0 +1,42 @@
+<?php get_header(); ?>
+
+<!-- Page-404 -->
+<section class="page-404 bg--white block-padding">
+    <div class="page-404__body container">
+        <div class="page-404__inner">
+            <h2 class="page-404__heading center">
+                <span class="page-404__word-first title title--green-light title--uppercase title--w-bold">
+                    Амбассадоры
+                </span>
+                <br>
+                <span class="page-404__word-last title title--green-light title--w-light">
+                    устойчивого развития
+                </span>
+            </h2>
+            <div class="page-404__pic">
+                <img src="<?php echo STANDART_DIR; ?>img/logo-404.png" alt="Логотип - Страница 404" class="page-404__img">
+            </div>
+            <p class="page-404__text title title--green-light title--w-regular center">
+                Упс, страница не найдена
+            </p>
+            <div class="page-404__actions">
+                <a href="" onclick="history.go(-1); return false;" class="page-404__btn button button--green button--icon">
+                    <div class="button__icon button__icon--left">
+                        <svg class="button__svg-icon" width="22" height="10" viewBox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 5.625C21.3452 5.625 21.625 5.34518 21.625 5C21.625 4.65482 21.3452 4.375 21 4.375L21 5.625ZM0.558058 4.55806C0.31398 4.80214 0.31398 5.19787 0.558058 5.44194L4.53553 9.41942C4.77961 9.6635 5.17534 9.6635 5.41942 9.41942C5.6635 9.17534 5.6635 8.77961 5.41942 8.53554L1.88388 5L5.41942 1.46447C5.66349 1.22039 5.66349 0.824662 5.41942 0.580584C5.17534 0.336506 4.77961 0.336506 4.53553 0.580584L0.558058 4.55806ZM21 4.375L1 4.375L1 5.625L21 5.625L21 4.375Z"/>
+                        </svg>
+                    </div>
+                    <div class="button__text">
+                        Назад
+                    </div>
+                </a>
+                <a href="<?php echo home_url(); ?>" class="page-404__btn button button--transparent">
+                    На главную
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /. Page-404 -->
+
+<?php get_footer(); ?>
