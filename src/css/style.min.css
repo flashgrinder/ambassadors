@@ -645,6 +645,8 @@ img {
   padding: 0;
   border-radius: 25px;
   overflow: hidden;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .team-card__photo {
@@ -655,6 +657,17 @@ img {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  border-radius: 25px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.team-card:hover .team-card__photo {
+  -webkit-transform: scale(0.92);
+          transform: scale(0.92);
 }
 
 .team-card__text {
