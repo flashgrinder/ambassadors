@@ -10,16 +10,22 @@
     font-size: 18px;
     line-height: 18px;
     border-radius: 25px;
-    padding: 10px 35px;
+    padding: 11px 35px;
     z-index: 10;
-    transition: background .2s ease-in-out, color .2s ease-in-out, border .2s ease-in-out;
+    transition: background .2s ease-in-out, color .2s ease-in-out, border .2s ease-in-out, box-shadow .2s ease-in-out;
 }
 
-.button--big {
-    padding: 15px 35px;
+.button__svg-icon {
+    display: block;
+    fill: var(--color-white);
+    transition: fill .2s ease-in-out;
 }
 
-.button-transparent,
+.button__icon--left {
+    margin-right: 10px;
+}
+
+.button--transparent,
 .button--green {
     border: 1px solid transparent;
 }
@@ -33,4 +39,23 @@
     color: var(--color-green-light);
     background: var(--color-white);
     border: 1px solid var(--color-green-light);
+}
+
+.button--green:hover .button__svg-icon {
+    fill: var(--color-green-light);
+}
+
+.button--transparent {
+    border: 1px solid var(--color-green-light);
+    color: var(--color-green-light);
+}
+
+.button--transparent:hover {
+    border: 1px solid var(--color-white);
+    box-shadow: 0px 0px 20px -8px rgb(0 0 0 / 50%);
+}
+
+.button--icon {
+    display: inline-flex;
+    align-items: center;
 }
