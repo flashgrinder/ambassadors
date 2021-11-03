@@ -1126,7 +1126,11 @@ button.swiper-pagination-bullet {
   font-size: calc(100px + 100 * ((100vw - 320px) / 880));
   line-height: 1;
   font-weight: 700;
-  color: var(--color-green-light);
+  color: transparent;
+  background-color: var(--color-green-light);
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+  -webkit-background-clip: text;
+          background-clip: text;
   pointer-events: none;
   -webkit-user-select: none;
      -moz-user-select: none;

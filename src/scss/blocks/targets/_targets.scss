@@ -28,8 +28,10 @@
     line-height: 1;
     font-range: 320px 1200px;
     font-weight: 700;
-    color: var(--color-green-light);
-    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0,05) inset;
+    color: transparent;
+    background-color: var(--color-green-light);
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+    background-clip: text;
     pointer-events: none;
     user-select: none;
 }
