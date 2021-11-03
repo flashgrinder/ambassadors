@@ -1,4 +1,5 @@
 import gsap from 'gsap';
+import slider from '../libs/modules/slider.js';
 import marquee from '../libs/modules/Marquee3k.js';
 document.addEventListener('DOMContentLoaded', function(e) {
 
@@ -6,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
         nullTargetWarn: false
     });
 
+    slider.init();
     marquee.init();
     
 });
