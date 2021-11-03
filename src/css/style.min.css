@@ -1234,6 +1234,96 @@ button.swiper-pagination-bullet {
   left: 30%;
 }
 
+/* Features */
+
+.features__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(400px, 538px) 40px minmax(400px, 538px);
+  grid-template-columns: repeat(2, minmax(400px, 538px));
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  grid-gap: 40px;
+}
+
+.features__card {
+  position: relative;
+  padding: 25px 15px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  max-width: 538px;
+  overflow: hidden;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+}
+
+.features__header {
+  min-height: 46px;
+  margin-bottom: 45px;
+}
+
+.features__headline {
+  padding: 0 20px;
+}
+
+.features__plunk {
+  position: absolute;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 150px;
+  height: 35px;
+  right: -48px;
+  top: 12px;
+  background: var(--color-green-light);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.features__icon {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.features__list {
+  margin: 0;
+  padding: 0 0 0 40px;
+  list-style: none;
+}
+
+.features__list-item {
+  position: relative;
+}
+
+.features__list-item ~ .features__list-item {
+  margin-top: 45px;
+}
+
+.features__list-item::before {
+  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxNyAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUuNSAxLjU2ODg1SDVDMi43OTA4NiAxLjU2ODg1IDEgMy4zNTk3MSAxIDUuNTY4ODVWNi4wNjg4NU0xNiAxMi4wNjg4VjEyLjU2ODhDMTYgMTQuNzc4IDE0LjIwOTEgMTYuNTY4OCAxMiAxNi41Njg4SDExLjUiIHN0cm9rZT0iIzFFQkM3RiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8cGF0aCBkPSJNMSAxMi41Njg4TDQuNTc4NTkgMTYuMTQ3NEM0Ljc5ODQzIDE2LjM2NzMgNS4xNjM0NyAxNi4zMzUzIDUuMzQxNzYgMTYuMDgwNkwxNS41IDEuNTY4ODUiIHN0cm9rZT0iIzFFQkM3RiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K");
+  position: absolute;
+  top: 2px;
+  left: -35px;
+}
+
+.features__footer {
+  margin-top: auto;
+}
+
+.features__actions {
+  margin-top: 45px;
+}
+
 /* Team */
 
 .team__items {
