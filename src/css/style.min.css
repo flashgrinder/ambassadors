@@ -1094,6 +1094,24 @@ button.swiper-pagination-bullet {
 
 /* Targets */
 
+.targets {
+  position: relative;
+}
+
+.targets__decor-pic {
+  position: absolute;
+  width: 100%;
+  max-width: 150px;
+}
+
+.targets__decor-pic--left {
+  left: 0;
+}
+
+.targets__decor-pic--right {
+  right: 0;
+}
+
 .targets__items {
   max-width: 800px;
   margin: 0 auto;
