@@ -65,6 +65,17 @@
 
     }, 10, 3 );
 
+    add_filter('nav_menu_css_class' , function($classes, $item) {
+        
+        if ( in_array('current-menu-item', $classes) ){
+
+            $classes[] = 'is-active ';
+
+        }
+        return $classes;
+
+    } , 10 , 2);
+
     // создаем новую колонку
     add_filter( 'manage_'.'post'.'_posts_columns', 'add_views_column', 4 );
     function add_views_column( $columns ){
