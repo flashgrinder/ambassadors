@@ -11,3 +11,7 @@
     include_once(__DIR__ . '/inc/actions.php');
     /* Filters */
     include_once(__DIR__ . '/inc/filters.php');
+    /* Custom_functions */
+    include_once(__DIR__ . '/inc/custom_functions.php');
+    /* Loadmore btn */
+    include_once(__DIR__ . '/inc/loadmore_btn.php');

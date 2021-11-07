@@ -11,10 +11,11 @@
         <?php
 
             $args = array(
-                'posts_per_page' => 8,
+                'posts_per_page' => 4,
                 'orderby'     => 'date',
                 'order'       => 'DESC',
-                'suppress_filters' => true
+                'suppress_filters' => true,
+                'cat' => get_query_var('cat')
             );
 
             $wp_query = new WP_Query( $args );

@@ -42,6 +42,18 @@
 
     });
 
+    // Подсчет количества посещений страниц
+    add_action( 'wp_head', 'kama_postviews' );
+
+    // Заполняем колонку данными - просмотрами
+    // wp-admin/includes/class-wp-posts-list-table.php
+    add_action('manage_'.'post'.'_posts_custom_column', 'fill_views_column', 5, 2 );
+    function fill_views_column( $colname, $post_id ){
+        if( $colname === 'views' ){
+            echo get_post_meta( $post_id, 'views', 1 ); 
+        }
+    }
+
     add_action( 'wp_head', function() {
 
 		?>

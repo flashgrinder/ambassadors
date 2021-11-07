@@ -5,7 +5,7 @@
 
     // Длина отрывков постов
     add_filter( 'excerpt_length', function($number) {
-        return 20;
+        return 18;
     });
 
     // Окончание отрывков постов
@@ -64,3 +64,15 @@
         return $classes;
 
     }, 10, 3 );
+
+    // создаем новую колонку
+    add_filter( 'manage_'.'post'.'_posts_columns', 'add_views_column', 4 );
+    function add_views_column( $columns ){
+        $num = 2; // после какой по счету колонки вставлять новые
+
+        $new_columns = array(
+            'views' => 'Визиты',
+        );
+
+        return array_slice( $columns, 0, $num ) + $new_columns + array_slice( $columns, $num );
+    }
