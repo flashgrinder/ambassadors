@@ -66,8 +66,8 @@
     }, 10, 3 );
 
     add_filter('nav_menu_css_class' , function($classes, $item) {
-        
-        if ( in_array('current-menu-item', $classes) ){
+
+        if ( in_array('current-menu-item', $classes) || $args->theme_location === 'header-menu' ){
 
             $classes[] = 'is-active ';
 
