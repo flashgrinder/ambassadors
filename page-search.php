@@ -1,4 +1,4 @@
-<?php /* Template Name: Домашняя страница */?>
+<?php /* Template Name: Страница поиска */?>
 <?php get_header(); ?>
 
 
