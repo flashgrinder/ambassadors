@@ -27,7 +27,7 @@
     // Добавляет класс пунктам меню в подвале
     add_filter( 'nav_menu_css_class', function($classes, $item, $args, $depth) {
         
-        if($args->theme_location === 'footer-menu') {
+        if($args->theme_location === 'footer-menu-1' || $args->theme_location === 'footer-menu-2' || $args->theme_location === 'footer-menu-3' || $args->theme_location === 'footer-menu-4') {
             $classes[] = 'menu__item footer__menu-item';
         }
         
@@ -49,7 +49,7 @@
     // Добавляет класс ссылкам меню в подвале
     add_filter( 'nav_menu_link_attributes', function( $atts, $item, $args ) {
         
-        if($args->theme_location === 'footer-menu') {
+        if($args->theme_location === 'footer-menu-1' || $args->theme_location === 'footer-menu-2' || $args->theme_location === 'footer-menu-3' || $args->theme_location === 'footer-menu-4') {
             $atts['class'] = 'menu__link footer__menu-link';
         }
         
