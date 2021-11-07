@@ -27,25 +27,15 @@
                     <div class="header__wrapper-menu js-menu">
                         <div class="header__menu">
                             <div class="header__menu-inner">
-                                <nav class="menu">
-                                    <ul class="menu__list header__menu-list">
-                                        <li class="menu__item header__menu-item is-active">
-                                            <a href="" class="menu__link">
-                                                Главная
-                                            </a>
-                                        </li>
-                                        <li class="menu__item header__menu-item">
-                                            <a href="" class="menu__link">
-                                                Новости
-                                            </a>
-                                        </li>
-                                        <li class="menu__item header__menu-item">
-                                            <a href="" class="menu__link">
-                                                Поиск
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
+                                <?php
+                                    wp_nav_menu([
+                                        'theme_location'  => 'header-menu',
+                                        'container'       => 'nav',
+                                        'container_class' => 'menu',
+                                        'menu_class'      => '',
+                                        'items_wrap'      => '<ul class="%2$s menu__list header__menu-list">%3$s</ul>'
+                                    ]);
+                                ?>
                             </div>
                         </div>
                     </div>
