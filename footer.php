@@ -68,7 +68,7 @@
                     Все права защищены ©
                 </p>
                 <p class="footer__text title title--tiny title--black title--w-regular">
-                    Амбассадоры целей устойчивого развития 2021
+                    Амбассадоры целей устойчивого развития <?php echo date('Y'); ?>
                 </p>
             </div>
         </div>
