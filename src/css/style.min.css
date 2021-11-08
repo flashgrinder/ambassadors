@@ -881,6 +881,13 @@ button.swiper-pagination-bullet {
   transition: background 0.2s ease-in-out, color 0.2s ease-in-out, border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
+.button--search {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: normal;
+  padding: 8px 35px;
+}
+
 .button--big {
   padding: 15px 35px;
 }
@@ -891,8 +898,17 @@ button.swiper-pagination-bullet {
   transition: fill 0.2s ease-in-out;
 }
 
+.button__svg-icon--search {
+  fill: none;
+  stroke: white;
+}
+
 .button__icon--left {
   margin-right: 10px;
+}
+
+.button__icon--right {
+  margin-left: 10px;
 }
 
 .button--transparent,
@@ -913,6 +929,11 @@ button.swiper-pagination-bullet {
 
 .button--green:hover .button__svg-icon {
   fill: var(--color-green-light);
+}
+
+.button--green:hover .button__svg-icon--search {
+  fill: none;
+  stroke: var(--color-green-light);
 }
 
 .button--transparent {
@@ -1692,6 +1713,70 @@ button.swiper-pagination-bullet {
 
 .news__action {
   margin-top: 45px;
+}
+
+/* Search */
+
+.search__form {
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 100%;
+}
+
+.search__field {
+  width: 100%;
+}
+
+.search__input {
+  font-family: var(--font-montserrat);
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(18, 18, 18, 0.55);
+  padding: 15px 15px 14px;
+  outline: none;
+  border: 1px solid var(--color-green-light);
+  border-radius: 25px;
+  width: 100%;
+}
+
+.search__input:focus,
+.search__input:target,
+.search__input:active,
+.search__input:focus-within,
+.search__input:focus-visible,
+.search__input:hover {
+  border: 1px solid var(--color-blue);
+}
+
+.search__btn {
+  margin-left: -45px;
+}
+
+.search__count {
+  margin-top: 15px;
+}
+
+.search__result {
+  margin-top: 35px;
+}
+
+.search__excerpt {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.search__more {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-dark-gray);
+  padding-bottom: 2px;
+  border-bottom: 1px solid rgba(18, 18, 18, 0.25);
+}
+
+.search__no-found {
+  margin-top: 35px;
 }
 
 /* 404 */

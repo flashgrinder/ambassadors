@@ -15,6 +15,13 @@
     transition: background .2s ease-in-out, color .2s ease-in-out, border .2s ease-in-out, box-shadow .2s ease-in-out;
 }
 
+.button--search {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: normal;
+    padding: 8px 35px;
+}
+
 .button--big {
     padding: 15px 35px;
 }
@@ -25,8 +32,17 @@
     transition: fill .2s ease-in-out;
 }
 
+.button__svg-icon--search {
+    fill: none;
+    stroke: white;
+}
+
 .button__icon--left {
     margin-right: 10px;
+}
+
+.button__icon--right {
+    margin-left: 10px;
 }
 
 .button--transparent,
@@ -47,6 +63,11 @@
 
 .button--green:hover .button__svg-icon {
     fill: var(--color-green-light);
+}
+
+.button--green:hover .button__svg-icon--search {
+    fill: none;
+    stroke: var(--color-green-light);
 }
 
 .button--transparent {

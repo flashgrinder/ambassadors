@@ -88,7 +88,59 @@
     <!-- MAIN -->
     <main class="main page__container">
 
+        <!-- Search -->
+        <section class="search bg--white block-padding">
+            <div class="search__body container">
+                <h2 class="search__heading title title--large title--black title--w-bold title--uppercase title--indent">
 
+            Поиск по сайту
+
+        </h2>
+                <form class="search__form" role="search" method="get" id="searchform" action="<?php echo home_url( '/' ) ?>">
+                    <div class="search__field">
+                        <input class="search__input" type="search" value="" name="s" id="s" placeholder="Что ищем?">
+                    </div>
+                    <button type="submit" value="Поиск" class="search__btn button button--green button--icon button--search">
+                        <div class="button__text">
+                            Найти
+                        </div>
+                        <div class="button__icon button__icon--right">
+                            <svg class="button__svg-icon button__svg-icon--search" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle r="7.04343" transform="matrix(0.999709 0.0241008 0.0241008 0.999709 16.4857 15.5143)" />
+                                <line x1="0.5" y1="-0.5" x2="4.77543" y2="-0.5" transform="matrix(-0.690607 0.723231 -0.721765 -0.692139 11.4622 19.6934)" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </button>
+                </form>
+                <div class="search__count title title--tiny title--dark-gray title--w-light">
+                    Найдено 3 совпадения
+                </div>
+                <div class="search__result">
+                    <h3 class="search__title title title--small title--dark-gray title--w-light">
+
+                Задачи проекта
+
+            </h3>
+                    <p class="search__excerpt text text--dark-gray text--w-light">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum praesentium obcaecati dolorum esse. Delectus soluta pariatur sint nam aut qui... <a href="" class="search__more">Подробнее</a>
+                    </p>
+                </div>
+                <div class="search__result">
+                    <h3 class="search__title title title--small title--dark-gray title--w-light">
+
+                Преимущества участия в проекте
+
+            </h3>
+                    <p class="search__excerpt text text--dark-gray text--w-light">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum praesentium obcaecati dolorum esse. Delectus soluta pariatur sint nam aut qui... <a href="" class="search__more">Подробнее</a>
+                    </p>
+                </div>
+                <div class="search__no-found text text--large text--black text--w-bold">
+                    По вашему запросу ничего не найдено.
+                </div>
+            </div>
+        </section>
+        <!-- /. Search -->
 
     </main>
     <!-- /. MAIN -->
