@@ -3,6 +3,12 @@
     width: 100%;
     top: 0;
     z-index: 1001;
+    transform: translateY(0);
+    transition: transform .3s ease-in-out;
+}
+
+.header.is-open {
+    transform: translateY(-100%);
 }
 
 .header__outer {
