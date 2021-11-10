@@ -1,0 +1,136 @@
+.post__header {
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.post__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 460px;
+    object-fit: cover;
+}
+
+.post__brd-meta {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 23px;
+    display: flex;
+    align-items: center;
+}
+
+.post__chapter,
+.post__day-month {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.post__brd-check {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.post__info {
+    position: absolute;
+    bottom: 0;
+}
+
+.post__outer-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 25px;
+}
+
+.post__meta {
+    display: flex;
+    align-items: center;
+}
+
+.post__read,
+.post__views {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.post__meta-svg {
+    vertical-align: middle;
+}
+
+.post__meta-text {
+    margin-left: 10px;
+}
+
+.post__tag {
+    display: inline-flex;
+}
+
+.post__tag {
+    padding: 5px 10px;
+    text-decoration: none;
+    background: var(--color-white);
+    border-radius: 5px;
+}
+
+.post__tag ~ .post__tag {
+    margin-left: 20px;
+}
+
+.post__title {
+    padding: 37px 170px 17px 25px;
+    background: rgba(18, 18, 18, 0.05);
+    backdrop-filter: blur(55px);
+}
+
+.post__content {
+    max-width: 1110px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.post__author {
+    margin-top: 40px;
+    font-size: 14px;
+    color: rgba(18, 18, 18, 0.55);
+    text-align: right;
+}
+
+.post__actions {
+    margin-top: 45px;
+}
+
+.post__actions {
+    margin-top: 45px;
+    text-align: center;
+}
+
+.post__btn ~ .post__btn {
+    margin-left: 50px;
+}
+
+.post__social-act {
+    margin-top: 100px;
+    display: flex;
+}
+
+.post__share-social {
+    margin-left: 60px;
+}
+
+.post__rating-stars,
+.post__share-btn {
+    margin-top: 15px;
+}
+
+.post__share-btn.ya-share2 .ya-share2__list {
+    margin-top: 0;
+}
+
+.post__share-btn.ya-share2 .ya-share2__list > .ya-share2__item {
+    margin: 0;
+}
+.post__share-btn.ya-share2 .ya-share2__list > .ya-share2__item ~ .ya-share2__item {
+    margin: 0 0 0 15px;
+}
