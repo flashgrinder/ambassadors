@@ -6,78 +6,42 @@
     <div class="slider__body container">
         <div class="slider__swiper swiper-container">
             <div class="slider__swiper-wrapper swiper-wrapper">
-                <div class="slider__swiper-slide swiper-slide">
-                    <!-- Text-block -->
-                    <div class="text-block">
-                        <div class="text-block__info">
-                            <div class="text-block__descr">
-                                <h3 class="text-block__title title title--big title--black title--w-extrabold title--uppercase">
-                                    Какой-то Конкурс 1
-                                </h3>
-                                <div class="text-block__text text text--large text--dark-gray text--w-light">
-                                    Проект «Амбассадоры устойчивого развития» создан для популяризации целей устойчивого развития (ЦУР) в Российской Федерации через создание платформы, объединяющей успешные региональные практики реализации ЦУР в сфере бизнеса, социального предпринимательства, образования, общественных объединений и волонтёрства, а так же формирование позитивного имиджа региона на федеральном уровне, повышение привлекательности регионов для молодежи
+                <?php if( have_rows('slider') ): ?>
+                    <?php while( have_rows('slider') ): the_row(); 
+                    
+                        $slider__slide_title = get_sub_field('slider_slide_title');
+                        $slider__slide_text = get_sub_field('slider_slide_text');
+                        $slider__slide_img = get_sub_field('slider_slide_img');
+                    
+                    ?>
+                        <div class="slider__swiper-slide swiper-slide">
+                            <!-- Text-block -->
+                            <div class="text-block">
+                                <div class="text-block__info">
+                                    <div class="text-block__descr">
+                                        <h3 class="text-block__title title title--big title--black title--w-extrabold title--uppercase">
+                                            <?php echo $slider__slide_title; ?>
+                                        </h3>
+                                        <div class="text-block__text text text--large text--dark-gray text--w-light">
+                                            <?php echo $slider__slide_text; ?>
+                                        </div>
+                                    </div>
+                                    <div class="text-block__actions">
+                                        <a href="javascript:;" class="text-block__btn button button--green">
+                                            Принять участие
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="text-block__pic">
+                                    <?php if( !empty( $slider__slide_img ) ) : ?>
+                                        <img src="<?php echo esc_url($slider__slide_img['url']); ?>" alt="<?php echo esc_attr($slider__slide_img['alt']); ?>" class="text-block__img">
+                                    <?php endif; ?>
                                 </div>
                             </div>
-                            <div class="text-block__actions">
-                                <a href="javascript:;" class="text-block__btn button button--green">
-                                    Принять участие
-                                </a>
-                            </div>
+                            <!-- /. Text-block -->
                         </div>
-                        <div class="text-block__pic">
-                            <img src="<?php echo STANDART_DIR; ?>img/uploads/slider-img-1.jpg" alt="" class="text-block__img">
-                        </div>
-                    </div>
-                    <!-- /. Text-block -->
-                </div>
-                <div class="slider__swiper-slide swiper-slide">
-                    <!-- Text-block -->
-                    <div class="text-block">
-                        <div class="text-block__info">
-                            <div class="text-block__descr">
-                                <h3 class="text-block__title title title--big title--black title--w-extrabold title--uppercase">
-                                    Какой-то Конкурс 2
-                                </h3>
-                                <div class="text-block__text text text--large text--dark-gray text--w-light">
-                                    Проект «Амбассадоры устойчивого развития» создан для популяризации целей устойчивого развития (ЦУР) в Российской Федерации через создание платформы, объединяющей успешные региональные практики реализации ЦУР в сфере бизнеса, социального предпринимательства, образования, общественных объединений и волонтёрства, а так же формирование позитивного имиджа региона на федеральном уровне, повышение привлекательности регионов для молодежи
-                                </div>
-                            </div>
-                            <div class="text-block__actions">
-                                <a href="javascript:;" class="text-block__btn button button--green">
-                                    Принять участие
-                                </a>
-                            </div>
-                        </div>
-                        <div class="text-block__pic">
-                            <img src="<?php echo STANDART_DIR; ?>img/uploads/slider-img-2.jpg" alt="" class="text-block__img">
-                        </div>
-                    </div>
-                    <!-- /. Text-block -->
-                </div>
-                <div class="slider__swiper-slide swiper-slide">
-                    <!-- Text-block -->
-                    <div class="text-block">
-                        <div class="text-block__info">
-                            <div class="text-block__descr">
-                                <h3 class="text-block__title title title--big title--black title--w-extrabold title--uppercase">
-                                    Какой-то Конкурс 3
-                                </h3>
-                                <div class="text-block__text text text--large text--dark-gray text--w-light">
-                                    Проект «Амбассадоры устойчивого развития» создан для популяризации целей устойчивого развития (ЦУР) в Российской Федерации через создание платформы, объединяющей успешные региональные практики реализации ЦУР в сфере бизнеса, социального предпринимательства, образования, общественных объединений и волонтёрства, а так же формирование позитивного имиджа региона на федеральном уровне, повышение привлекательности регионов для молодежи
-                                </div>
-                            </div>
-                            <div class="text-block__actions">
-                                <a href="javascript:;" class="text-block__btn button button--green">
-                                    Принять участие
-                                </a>
-                            </div>
-                        </div>
-                        <div class="text-block__pic">
-                            <img src="<?php echo STANDART_DIR; ?>img/uploads/slider-img-3.jpg" alt="" class="text-block__img">
-                        </div>
-                    </div>
-                    <!-- /. Text-block -->
-                </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
             </div>
         </div>
         <div class="slider__pagination swiper-pagination"></div>
