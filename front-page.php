@@ -468,30 +468,25 @@
                 Партнёры
             </h2>
         </div>
-        <div class="partners__outer container-page marquee3k" data-speed="0.3">
+        <div class="partners__outer container-page marquee3k" data-speed="0.4">
             <div class="partners__wrapper-items">
                 <div class="partners__items">
-                    <a href="" class="partners__item">
-                        <img src="<?php echo STANDART_DIR; ?>img/partners/logo-1.png" alt="" class="partners__logo">
-                    </a>
-                    <a href="" class="partners__item">
-                        <img src="<?php echo STANDART_DIR; ?>img/partners/logo-2.png" alt="" class="partners__logo">
-                    </a>
-                    <a href="" class="partners__item">
-                        <img src="<?php echo STANDART_DIR; ?>img/partners/logo-3.png" alt="" class="partners__logo">
-                    </a>
-                    <a href="" class="partners__item">
-                        <img src="<?php echo STANDART_DIR; ?>img/partners/logo-4.png" alt="" class="partners__logo">
-                    </a>
-                    <a href="" class="partners__item">
-                        <img src="<?php echo STANDART_DIR; ?>img/partners/logo-5.png" alt="" class="partners__logo">
-                    </a>
-                    <a href="" class="partners__item">
-                        <img src="<?php echo STANDART_DIR; ?>img/partners/logo-6.png" alt="" class="partners__logo">
-                    </a>
-                    <a href="" class="partners__item">
-                        <img src="<?php echo STANDART_DIR; ?>img/partners/logo-7.png" alt="" class="partners__logo">
-                    </a>
+                    <?php if( have_rows('partners') ): ?>
+                        <?php while( have_rows('partners') ): the_row(); 
+                        
+                            $partner__logo = get_sub_field('partner_logo');
+                            $partner__link = get_sub_field('partner_link');
+                        
+                        ?>
+                            <?php //if( $partner__link ): ?>
+                                <a href="<?php echo esc_url( $partner__link ); ?>" class="partners__item">
+                                    <?php if( !empty( $partner__logo ) ) : ?>
+                                        <img src="<?php echo esc_url($partner__logo['url']); ?>" alt="<?php echo esc_attr($partner__logo['alt']); ?>" class="partners__logo">
+                                    <?php endif; ?>
+                                </a>
+                            <?php //endif; ?>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>

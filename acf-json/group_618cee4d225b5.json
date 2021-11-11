@@ -413,6 +413,100 @@
                     "placeholder": ""
                 }
             ]
+        },
+        {
+            "key": "field_618d00f84f581",
+            "label": "Блок - Партнёры",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_618d000d20ebc",
+            "label": "Партнёры",
+            "name": "partners",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_618d00cd20ebf",
+                    "label": "Партнёр",
+                    "name": "",
+                    "type": "accordion",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "open": 0,
+                    "multi_expand": 0,
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_618d007a20ebd",
+                    "label": "Логотип",
+                    "name": "partner_logo",
+                    "type": "image",
+                    "instructions": "Логотип",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "full",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_618d00ae20ebe",
+                    "label": "Ссылка на партнёра",
+                    "name": "partner_link",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
         }
     ],
     "location": [
@@ -433,5 +527,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1636629966
+    "modified": 1636630786
 }
