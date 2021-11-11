@@ -65,3 +65,14 @@
 		<?php
 
 	}, 20);
+
+    add_action( 'wp_footer', function() {
+
+		?>
+
+        <!-- Яндекс шаринг -->
+        <script src="https://yastatic.net/share2/share.js"></script>
+
+		<?php
+
+	}, 20);

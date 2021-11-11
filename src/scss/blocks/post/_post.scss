@@ -34,6 +34,7 @@
 .post__info {
     position: absolute;
     bottom: 0;
+    width: 100%;
 }
 
 .post__outer-meta {
@@ -122,6 +123,10 @@
 .post__rating-stars,
 .post__share-btn {
     margin-top: 15px;
+}
+
+.post__rating-stars .rmp-widgets-container.rmp-wp-plugin.rmp-main-container .rmp-rating-widget__results  {
+    display: none !important;
 }
 
 .post__share-btn.ya-share2 .ya-share2__list {
