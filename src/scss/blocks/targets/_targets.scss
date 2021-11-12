@@ -32,6 +32,10 @@
     margin-top: 40px;
 }
 
+.targets--about .targets__item ~ .targets__item {
+    margin-top: 90px;
+}
+
 .targets__item:nth-child(even) {
     align-self: flex-end;
 }
@@ -110,4 +114,9 @@
 .targets__decor-stars--two {
     bottom: -63%;
     left: 30%;
+}
+
+.targets--about .targets__decor-stars--two {
+    bottom: 9%;
+    left: -14%;
 }
