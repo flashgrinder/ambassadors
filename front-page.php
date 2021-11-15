@@ -62,7 +62,7 @@
 <!-- /. Slider -->
 
 <!-- Targets -->
-<section class="targets bg--black-low block-padding">
+<section class="targets bg--black-low block-padding" id="targets">
     <div class="targets__decor-pic targets__decor-pic--left">
         <svg class="targets__decor-svg" viewBox="0 0 192 530" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_d_272:1312)">
@@ -246,7 +246,7 @@
 <!-- /. Targets -->
 
 <!-- Features -->
-<section class="features bg--white block-padding">
+<section class="features bg--white block-padding" id="features">
     <div class="features__body container">
         <h2 class="features__heading title title--large title--black title--w-bold title--uppercase title--indent">
             Преимущества участия в проекте
@@ -394,7 +394,7 @@
 <!-- /. Team -->
 
 <!-- Team -->
-<section class="team bg--white block-padding">
+<section class="team bg--white block-padding" id="team">
     <div class="team__body container">
         <h2 class="team__heading title title--large title--black title--w-bold title--uppercase title--indent">
             Эксперты
@@ -461,7 +461,7 @@
 <!-- /. Team -->
 
 <!-- Partners -->
-<section class="partners bg--white block-padding">
+<section class="partners bg--white block-padding" id="partners">
     <div class="partners__body">
         <div class="partners__container container">
             <h2 class="partners__heading title title--large title--black title--w-bold title--uppercase title--indent">
@@ -495,7 +495,7 @@
 <!-- /. Partners -->
 
 <!-- Contacts -->
-<section class="contacts block-padding">
+<section class="contacts block-padding" id="contacts">
     <div class="contacts__body container">
         <h2 class="contacts__heading title title--large title--white title--w-bold title--uppercase title--indent">
             Контакты
