@@ -78,6 +78,7 @@
   --color-white: #FFFFFF;
   --color-white-milk: #ECECF0;
   --color-black: #121212;
+  --color-gray: #5F5F5F;
   --color-dark-gray: #555555;
   --color-green-light: #1EBC7F;
   --color-blue: #136BCF;
@@ -369,6 +370,10 @@ img {
 
 .text--black {
   color: var(--color-black);
+}
+
+.text--gray {
+  color: var(--color-gray);
 }
 
 .text--dark-gray {
@@ -1924,6 +1929,78 @@ button.swiper-pagination-bullet {
 
 .post__share-btn.ya-share2 .ya-share2__list > .ya-share2__item ~ .ya-share2__item {
   margin: 0 0 0 15px;
+}
+
+/* Main-goal */
+
+.main-goal__inner {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+
+.main-goal__arrow {
+  margin: 0 15px;
+}
+
+.main-goal__descr {
+  margin-top: 15px;
+  max-width: 600px;
+}
+
+/* Dev-goals */
+
+.dev-goals__text {
+  margin-top: 20px;
+}
+
+.dev-goals__items {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 270px));
+  grid-gap: 20px;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  margin-top: 70px;
+}
+
+.dev-goals__item {
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.dev-goals__item--more {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  box-shadow: inset 0px 0px 0px 218.173px #FFFFFF;
+  -webkit-filter: drop-shadow(0px 0px 19.4977px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0px 0px 19.4977px rgba(0, 0, 0, 0.1));
+  cursor: pointer;
+}
+
+.dev-goals__img {
+  display: block;
+  height: 100%;
+  max-height: 145px;
+  width: 100%;
+  max-width: 270px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.dev-goals__item-svg {
+  margin-top: 20px;
 }
 
 /* Wysiwyg */
