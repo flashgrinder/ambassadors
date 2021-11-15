@@ -327,7 +327,7 @@
 <!-- /. Features -->
 
 <!-- Team -->
-<section class="team bg--white block-padding">
+<section class="team bg--white block-padding" id="team">
     <div class="team__body container">
         <h2 class="team__heading title title--large title--black title--w-bold title--uppercase title--indent">
             Команда
@@ -394,7 +394,7 @@
 <!-- /. Team -->
 
 <!-- Team -->
-<section class="team bg--white block-padding" id="team">
+<section class="team bg--white block-padding">
     <div class="team__body container">
         <h2 class="team__heading title title--large title--black title--w-bold title--uppercase title--indent">
             Эксперты
