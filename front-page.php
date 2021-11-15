@@ -280,7 +280,7 @@
                 </div>
                 <footer class="features__footer">
                     <div class="features__actions center">
-                        <a href="javascript:;" class="features__btn button button--green">
+                        <a href="<?php the_field('features_card_btn-one'); ?>" class="features__btn button button--green">
                             Присоединиться
                         </a>
                     </div>
@@ -315,7 +315,7 @@
                 </div>
                 <footer class="features__footer">
                     <div class="features__actions center">
-                        <a href="javascript:;" class="features__btn button button--green">
+                        <a href="<?php the_field('features_card_btn-two'); ?>" class="features__btn button button--green">
                             Присоединиться
                         </a>
                     </div>
