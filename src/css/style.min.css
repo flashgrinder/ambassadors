@@ -2269,7 +2269,7 @@ button.swiper-pagination-bullet {
           align-items: center;
   overflow-y: auto;
   background-color: transparent;
-  padding-top: 20px;
+  padding-top: 100px;
   z-index: 999;
   top: 0;
   bottom: 0;
@@ -2308,7 +2308,7 @@ button.swiper-pagination-bullet {
           flex-direction: column;
   max-width: 555px;
   width: 100%;
-  padding: 50px;
+  padding: 30px 50px 50px 50px;
   overflow-x: hidden;
   border-radius: 25px;
 }
@@ -2330,8 +2330,8 @@ button.swiper-pagination-bullet {
 }
 
 .modal__title {
-  margin-top: 45px;
-  margin-bottom: 45px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .modal__form {
@@ -2382,7 +2382,7 @@ button.swiper-pagination-bullet {
 
 .modal__actions {
   position: relative;
-  margin-top: 45px;
+  margin-top: 35px;
   text-align: center;
 }
 
