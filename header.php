@@ -21,7 +21,7 @@
                 <img src="<?php echo STANDART_DIR; ?>img/logo-header.png" alt="Логотип" class="modal__img-logo">
             </div>
             <h3 class="modal__title modal__field--anim title title--large title--black title--w-bold center">
-                Заявка на участие
+                Оставить заявку
             </h3>
             <?php echo do_shortcode('[contact-form-7 id="51" title="Модальное окно с формой" html_class="modal__form"]'); ?>
             <div class="modal__policy text text--small text--w-light center modal__field--anim">
