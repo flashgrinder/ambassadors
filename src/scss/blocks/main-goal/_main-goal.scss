@@ -1,3 +1,28 @@
+.main-goal {
+    position: relative;
+}
+
+.main-goal__decor-pic {
+    position: absolute;
+    width: 100%;
+    max-width: 120px;
+    user-select: none;
+}
+
+.main-goal__decor-pic--left {
+    left: 0;
+}
+
+.main-goal__decor-pic--right {
+    right: 0;
+    top: 0;
+}
+
+.main-goal__svg {
+    display: block;
+    max-width: 120px;
+}
+
 .main-goal__inner {
     display: flex;
     align-items: center;

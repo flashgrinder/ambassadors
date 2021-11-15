@@ -5,7 +5,12 @@
 .targets__decor-pic {
     position: absolute;
     width: 100%;
-    max-width: 150px;
+    max-width: 120px;
+}
+
+.targets__decor-svg {
+    display: block;
+    max-width: 120px;
 }
 
 .targets__decor-pic--left {
@@ -13,6 +18,16 @@
 }
 
 .targets__decor-pic--right {
+    right: 0;
+}
+
+.targets__decor-pic.targets__decor-pic--about-left {
+    left: 0;
+    top: -250px;
+}
+
+.targets__decor-pic.targets__decor-pic--about-right {
+    top: -50px;
     right: 0;
 }
 
