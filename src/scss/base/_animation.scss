@@ -7,6 +7,25 @@
     }
 }
 
+/* Burger-menu */
+@keyframes rotate-burger-before {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes rotate-burger-after {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+
 .gs-reveal {
     opacity: 0;
     visibility: hidden;

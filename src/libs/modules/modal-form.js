@@ -1,4 +1,5 @@
 import gsap from 'gsap';
+import burgerMenu from './burger-menu.js';
 
 let tl = gsap.timeline({defaults: {duration: .2, ease: 'power3.out'}});
 
@@ -62,6 +63,7 @@ const modalService = () => {
 
                 modal.classList.add('is-open');
                 header.classList.add('is-open');
+                burgerMenu.close();
                 
                 setTimeout(() => {
                     

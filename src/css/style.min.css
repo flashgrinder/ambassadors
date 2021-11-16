@@ -135,6 +135,56 @@ img {
   }
 }
 
+/* Burger-menu */
+
+@-webkit-keyframes rotate-burger-before {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+
+@keyframes rotate-burger-before {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+
+@-webkit-keyframes rotate-burger-after {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+}
+
+@keyframes rotate-burger-after {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+}
+
 .gs-reveal {
   opacity: 0;
   visibility: hidden;
@@ -1027,7 +1077,8 @@ button.swiper-pagination-bullet {
   display: block;
 }
 
-.header__inner {
+.header__inner,
+.header__wrapper-menu {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -1057,6 +1108,73 @@ button.swiper-pagination-bullet {
 
 .header__actions {
   margin-left: 35px;
+}
+
+/* Burger-menu */
+
+.burger-menu {
+  width: 40px;
+  height: 25px;
+  cursor: pointer;
+  display: none;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.burger-menu__line {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 2px;
+  background-color: var(--color-black);
+}
+
+.burger-menu__line,
+.burger-menu__line::before,
+.burger-menu__line::after {
+  border-radius: 50px;
+  transition: top 0.2s ease-in-out, background-color 0.1s ease-in-out, width 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, top 0.2s ease-in-out, background-color 0.1s ease-in-out, width 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, top 0.2s ease-in-out, background-color 0.1s ease-in-out, width 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.burger-menu__line::before,
+.burger-menu__line::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background: var(--color-black);
+}
+
+.burger-menu__line::before {
+  bottom: 0;
+  right: 0;
+  top: 10px;
+  width: 20px;
+}
+
+.burger-menu__line::after {
+  top: 0;
+  left: 0;
+  top: -10px;
+}
+
+.burger-menu.is-open .burger-menu__line {
+  background-color: transparent;
+}
+
+.burger-menu.is-open .burger-menu__line::before {
+  top: 0;
+  width: 40px;
+  -webkit-animation: rotate-burger-before 0.2s linear 0.2s forwards;
+          animation: rotate-burger-before 0.2s linear 0.2s forwards;
+}
+
+.burger-menu.is-open .burger-menu__line::after {
+  top: 0;
+  -webkit-animation: rotate-burger-after 0.2s linear 0.2s forwards;
+          animation: rotate-burger-after 0.2s linear 0.2s forwards;
 }
 
 /* Menu */
@@ -2575,6 +2693,53 @@ button.swiper-pagination-bullet {
 @media screen and (max-width: 1024px) {
   .hide-tablet {
     display: none !important;
+  }
+
+  .header__wrapper-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(25px);
+            backdrop-filter: blur(25px);
+    padding: 50px;
+    padding: 45px 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s ease-out, opacity 0.2s ease-out;
+  }
+
+  .header__menu-list.menu__list {
+    -webkit-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .header__menu-item.menu__item ~ .header__menu-item.menu__item {
+    margin-left: 0;
+    margin-top: 30px;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .header__actions {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .header__btn {
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .burger-menu {
+    display: -webkit-flex;
+    display: flex;
   }
 }
 
