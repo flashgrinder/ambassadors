@@ -2804,6 +2804,12 @@ button.swiper-pagination-bullet {
     -webkit-order: -1;
             order: -1;
   }
+
+  .features__items {
+    -ms-grid-columns: minmax(300px, 538px) 15px minmax(300px, 538px);
+    grid-template-columns: repeat(2, minmax(300px, 538px));
+    grid-gap: 15px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -2827,6 +2833,15 @@ button.swiper-pagination-bullet {
 
   .slider__arrow--next {
     right: 15%;
+  }
+
+  .features__items {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .features__card {
+    max-width: 100%;
   }
 
   .news__items {
