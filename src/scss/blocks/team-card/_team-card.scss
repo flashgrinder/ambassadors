@@ -2,6 +2,9 @@
     position: relative;
     display: grid;
     grid-template-columns: minmax(0,215px) minmax(0,1fr);
+    @include mobileXS-block {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
 }
 
 .team-card::before {
@@ -29,6 +32,9 @@
     flex-direction: column;
     justify-content: space-between;
     margin-left: 20px;
+    @include mobileXS-block {
+        margin-right: 20px;
+    }
 }
 
 .team-card__figure {
@@ -54,6 +60,9 @@
     transform: scale(0.92);
 }
 
+.team-card__heading {
+    @include mobileXS(margin-top, 10px);
+}
 
 .team-card__text {
     margin-top: 0px;
@@ -74,6 +83,7 @@
     opacity: 0;
     visibility: hidden;
     transition: transform .2s ease-in-out, opacity .2s ease-in-out, visibility .2s ease-in-out;
+    @include mobileXS(margin-top, 25px);
 }
 
 .team-card:hover .team-card__social {

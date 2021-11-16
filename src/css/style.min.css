@@ -2770,6 +2770,12 @@ button.swiper-pagination-bullet {
     display: flex;
   }
 
+  .team__items {
+    -ms-grid-columns: minmax(0, 1fr);
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-gap: 30px;
+  }
+
   .news__items {
     grid-template-columns: repeat(auto-fit, minmax(480px, 0.5fr));
     grid-gap: 15px;
@@ -2870,6 +2876,23 @@ button.swiper-pagination-bullet {
 
   .slider__arrow--next {
     right: 5%;
+  }
+
+  .team-card {
+    -ms-grid-columns: (minmax(0, 1fr))[1];
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .team-card__body {
+    margin-right: 20px;
+  }
+
+  .team-card__heading {
+    margin-top: 10px;
+  }
+
+  .team-card__social {
+    margin-top: 25px;
   }
 
   .news__items {
