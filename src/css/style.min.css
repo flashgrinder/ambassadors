@@ -2665,6 +2665,10 @@ button.swiper-pagination-bullet {
           align-items: flex-start;
 }
 
+.footer__column ~ .footer__column {
+  margin-left: 20px;
+}
+
 .footer__column--nav {
   max-width: 226px;
 }
@@ -2715,6 +2719,10 @@ button.swiper-pagination-bullet {
 
   .slider__pagination {
     margin-top: 40px;
+  }
+
+  .footer__logo {
+    margin-left: 100px;
   }
 }
 
@@ -2816,6 +2824,10 @@ button.swiper-pagination-bullet {
     grid-template-columns: repeat(2, minmax(300px, 538px));
     grid-gap: 15px;
   }
+
+  .footer__logo {
+    margin-left: 40px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -2856,6 +2868,20 @@ button.swiper-pagination-bullet {
 
   .modal__body {
     max-width: 450px;
+  }
+
+  .footer__inner {
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+
+  .footer__logo {
+    margin: 40px auto 0 auto;
+    text-align: center;
+  }
+
+  .footer__reserved {
+    margin-top: 50px;
   }
 }
 
@@ -2933,6 +2959,16 @@ button.swiper-pagination-bullet {
 
   .modal__actions .wpcf7-spinner {
     margin: 0 10px;
+  }
+
+  .footer__column ~ .footer__column {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  .footer__column--nav {
+    max-width: 100%;
+    width: 100%;
   }
 }
 

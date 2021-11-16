@@ -7,10 +7,25 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    @include mobile-block {
+        flex-wrap: wrap;
+    }
+}
+
+.footer__column ~ .footer__column {
+    margin-left: 20px;
+    @include mobileXS-block {
+        margin-left: 0;
+        margin-top: 40px;
+    }
 }
 
 .footer__column--nav {
     max-width: 226px;
+    @include mobileXS-block {
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 .footer__menu-nav + .footer__title-col {
@@ -25,10 +40,19 @@
 
 .footer__logo {
     margin-left: 160px;
+    @include to(1280px) {
+        margin-left: 100px;
+    }
+    @include tabletSM(margin-left, 40px);
+    @include mobile-block {
+        margin: 40px auto 0 auto;
+        text-align: center;
+    }
 }
 
 .footer__reserved {
     margin-top: 100px;
+    @include mobile(margin-top, 50px);
 }
 
 .footer__text ~ .footer__text {
