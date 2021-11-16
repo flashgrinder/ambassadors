@@ -2845,6 +2845,14 @@ button.swiper-pagination-bullet {
     display: none !important;
   }
 
+  .block-padding {
+    padding: 45px 0;
+  }
+
+  .title--indent {
+    margin: 0 0 40px 0;
+  }
+
   .slider__arrow--prev {
     left: 15%;
   }

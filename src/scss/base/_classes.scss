@@ -61,6 +61,7 @@
 
 .block-padding {
     padding: 75px 0;
+    @include mobile(padding, 45px 0);
 }
 
 /* Links */
@@ -136,6 +137,7 @@
 
 .title--indent {
     margin: 0 0 65px 0;
+    @include mobile(margin, 0 0 40px 0);
 }
 
 /* Text */
