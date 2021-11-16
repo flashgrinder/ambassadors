@@ -65,11 +65,11 @@
                                 ?>
                             </div>
                         </div>
-                    </div>
-                    <div class="header__actions">
-                        <a href="javascript:;" class="header__btn button button--green button--big" data-modal-trigger="modal-form">
-                            Присоединиться к проекту
-                        </a>
+                        <div class="header__actions">
+                            <a href="javascript:;" class="header__btn button button--green button--big" data-modal-trigger="modal-form">
+                                Присоединиться к проекту
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
