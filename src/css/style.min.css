@@ -1231,6 +1231,7 @@ button.swiper-pagination-bullet {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   cursor: pointer;
+  z-index: 500;
 }
 
 .slider__arrow--prev {
@@ -1249,6 +1250,11 @@ button.swiper-pagination-bullet {
   position: relative;
   margin-top: 15px;
   width: 100%;
+  z-index: 101;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
 }
 
 .slider__bullet {
@@ -2687,6 +2693,31 @@ button.swiper-pagination-bullet {
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 1280px) {
+  .slider__arrow {
+    top: auto;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  .slider__arrow--prev {
+    left: 30%;
+  }
+
+  .slider__arrow--next {
+    right: 30%;
+  }
+
+  .slider__arrow--next,
+  .slider__arrow--prev {
+    bottom: -15px;
+  }
+
+  .slider__pagination {
+    margin-top: 40px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .hide-tablet {
     display: none !important;
@@ -2749,6 +2780,30 @@ button.swiper-pagination-bullet {
   .hide-tabletSM {
     display: none !important;
   }
+
+  .slider__arrow--prev {
+    left: 30%;
+  }
+
+  .slider__arrow--next {
+    right: 30%;
+  }
+
+  .text-block {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .text-block__title,
+  .text-block__text,
+  .text-block__actions {
+    text-align: center;
+  }
+
+  .text-block__pic {
+    -webkit-order: -1;
+            order: -1;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -2764,6 +2819,14 @@ button.swiper-pagination-bullet {
 
   .hide-mobile {
     display: none !important;
+  }
+
+  .slider__arrow--prev {
+    left: 15%;
+  }
+
+  .slider__arrow--next {
+    right: 15%;
   }
 
   .news__items {
@@ -2784,6 +2847,14 @@ button.swiper-pagination-bullet {
   .container-full {
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .slider__arrow--prev {
+    left: 5%;
+  }
+
+  .slider__arrow--next {
+    right: 5%;
   }
 
   .news__items {

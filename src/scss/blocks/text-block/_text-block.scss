@@ -4,6 +4,9 @@
     align-items: center;
     justify-content: space-between;
     grid-gap: 50px;
+    @include tabletSM-block {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .text-block--about {
@@ -17,9 +20,16 @@
     margin-top: 30px;
 }
 
+.text-block__title,
+.text-block__text,
+.text-block__actions {
+    @include tabletSM(text-align, center);
+}
+
 .text-block__pic {
     border-radius: 25px;
     overflow: hidden;
+    @include tabletSM(order, -1);
 }
 
 .text-block__img {
