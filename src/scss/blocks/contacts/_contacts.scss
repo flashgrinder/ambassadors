@@ -2,6 +2,7 @@
     padding: 95px 0;
     background: var(--gradient-green), url('../img/contacts/contacts-bg.jpg') center no-repeat;
     background-size: cover;
+    @include mobile(padding, 50px 0);
 }
 
 .contacts__items {

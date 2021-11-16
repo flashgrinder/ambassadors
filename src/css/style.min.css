@@ -2862,6 +2862,10 @@ button.swiper-pagination-bullet {
     max-width: 100%;
   }
 
+  .contacts {
+    padding: 50px 0;
+  }
+
   .news__items {
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   }
