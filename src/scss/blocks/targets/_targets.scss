@@ -6,6 +6,7 @@
     position: absolute;
     width: 100%;
     max-width: 120px;
+    @include tablet(display, none);
 }
 
 .targets__decor-svg {
@@ -15,6 +16,9 @@
 
 .targets__decor-pic--left {
     left: 0;
+    @include to(1366px) {
+        top: 40%;
+    }
 }
 
 .targets__decor-pic--right {
@@ -36,19 +40,24 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    @include tablet(max-width, 736px);
+    @include mobile(max-width, 500px);
 }
 
 .targets__item {
     position: relative;
     max-width: 260px;
+    @include mobile(margin-top, 120px);
 }
 
 .targets__item ~ .targets__item {
     margin-top: 40px;
+    @include mobile(margin-top, 120px);
 }
 
 .targets--about .targets__item ~ .targets__item {
     margin-top: 90px;
+    @include mobile(margin-top, 130px);
 }
 
 .targets__item:nth-child(even) {
@@ -61,7 +70,7 @@
     bottom: -32px;
     content: attr(data-num);
     font-family: var(--font-rubik);
-    font-size: responsive 100px 200px;
+    font-size: responsive 150px 200px;
     line-height: 1;
     font-range: 320px 1200px;
     font-weight: 700;
@@ -71,10 +80,30 @@
     background-clip: text;
     pointer-events: none;
     user-select: none;
+    @include tablet(left, -65px);
+    @include mobile-block {
+        bottom: auto;
+        top: -110px;
+    }
 }
 
 .targets__item:nth-child(1)::before {
     left: -75px;
+    @include tablet(left, -55px);
+}
+
+.targets__item:nth-child(2n+1)::before {
+    @include mobile-block {
+        left: 0;
+        text-align: left;
+    }
+}
+
+.targets__item:nth-child(2n)::before {
+    @include mobile-block {
+        right: 0;
+        text-align: right;
+    }
 }
 
 .targets__headline {
@@ -107,6 +136,7 @@
 
 .targets__decor-arrow {
     bottom: auto;
+    @include mobile(display, none);
 }
 
 .targets__decor-arrow--right {
@@ -129,6 +159,7 @@
 .targets__decor-stars--two {
     bottom: -63%;
     left: 30%;
+    @include mobile(display, none);
 }
 
 .targets--about .targets__decor-stars--two {
