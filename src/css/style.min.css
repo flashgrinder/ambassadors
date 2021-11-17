@@ -1728,13 +1728,22 @@ button.swiper-pagination-bullet {
           align-items: center;
 }
 
+.partners__items.swiper-wrapper {
+  transition-timing-function: linear;
+}
+
 .partners__item {
-  display: block;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
   max-height: 100px;
-  margin-left: 105px;
 }
 
 .partners__logo {
+  display: block;
   max-height: 100px;
 }
 
