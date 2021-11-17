@@ -468,9 +468,9 @@
                 Партнёры
             </h2>
         </div>
-        <div class="partners__outer container-page marquee3k" data-speed="0.4">
-            <div class="partners__wrapper-items">
-                <div class="partners__items">
+        <div class="partners__outer container-page">
+            <div class="partners__wrapper-items partners__item--slider swiper-container">
+                <div class="partners__items swiper-wrapper">
                     <?php if( have_rows('partners') ): ?>
                         <?php while( have_rows('partners') ): the_row(); 
                         
@@ -479,7 +479,7 @@
                         
                         ?>
                             <?php //if( $partner__link ): ?>
-                                <a href="<?php echo esc_url( $partner__link ); ?>" class="partners__item">
+                                <a href="<?php echo esc_url( $partner__link ); ?>" class="partners__item swiper-slide">
                                     <?php if( !empty( $partner__logo ) ) : ?>
                                         <img src="<?php echo esc_url($partner__logo['url']); ?>" alt="<?php echo esc_attr($partner__logo['alt']); ?>" class="partners__logo">
                                     <?php endif; ?>
