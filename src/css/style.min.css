@@ -2883,6 +2883,10 @@ button.swiper-pagination-bullet {
     right: 15%;
   }
 
+  .text-block--about {
+    padding: 45px 0;
+  }
+
   .targets__items {
     max-width: 500px;
   }
