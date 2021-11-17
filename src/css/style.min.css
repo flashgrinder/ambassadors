@@ -2111,6 +2111,10 @@ button.swiper-pagination-bullet {
   margin: 0 15px;
 }
 
+.main-goal__arrow--mobile {
+  display: none;
+}
+
 .main-goal__descr {
   margin-top: 15px;
   max-width: 600px;
@@ -2701,6 +2705,10 @@ button.swiper-pagination-bullet {
   .targets__decor-pic--left {
     top: 40%;
   }
+
+  .main-goal__decor-pic {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -2735,6 +2743,10 @@ button.swiper-pagination-bullet {
 @media screen and (max-width: 1024px) {
   .hide-tablet {
     display: none !important;
+  }
+
+  .block-padding {
+    padding: 45px 0;
   }
 
   .header__wrapper-menu {
@@ -2810,6 +2822,22 @@ button.swiper-pagination-bullet {
     grid-template-columns: repeat(auto-fit, minmax(480px, 0.5fr));
     grid-gap: 15px;
   }
+
+  .main-goal__inner {
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+            justify-content: center;
+  }
+
+  .main-goal__arrow--mobile {
+    margin: 20px 0;
+    display: block;
+  }
+
+  .main-goal__descr {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -2865,10 +2893,6 @@ button.swiper-pagination-bullet {
 
   .hide-mobile {
     display: none !important;
-  }
-
-  .block-padding {
-    padding: 45px 0;
   }
 
   .title--indent {

@@ -61,7 +61,7 @@
 
 .block-padding {
     padding: 75px 0;
-    @include mobile(padding, 45px 0);
+    @include tablet(padding, 45px 0);
 }
 
 /* Links */

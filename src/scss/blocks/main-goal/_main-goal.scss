@@ -7,6 +7,9 @@
     width: 100%;
     max-width: 120px;
     user-select: none;
+    @include to(1366px) {
+        display: none;
+    }
 }
 
 .main-goal__decor-pic--left {
@@ -27,13 +30,28 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include tablet-block {
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 .main-goal__arrow {
     margin: 0 15px;
 }
 
+.main-goal__arrow--mobile {
+    display: none;
+    @include tablet-block {
+        margin: 20px 0;
+        display: block;
+    }
+}
+
 .main-goal__descr {
     margin-top: 15px;
     max-width: 600px;
+    @include tablet-block {
+        text-align: center;
+    }
 }
