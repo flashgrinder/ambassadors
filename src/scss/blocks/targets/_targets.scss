@@ -28,6 +28,9 @@
 .targets__decor-pic.targets__decor-pic--about-left {
     left: 0;
     top: -250px;
+    @include to(1366px) {
+        top: 30%;
+    }
 }
 
 .targets__decor-pic.targets__decor-pic--about-right {
