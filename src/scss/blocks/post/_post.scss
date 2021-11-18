@@ -19,6 +19,7 @@
     padding: 15px 23px;
     display: flex;
     align-items: center;
+    @include mobileXS(display, none);
 }
 
 .post__chapter,
@@ -29,6 +30,13 @@
 .post__brd-check {
     margin-left: 15px;
     margin-right: 15px;
+}
+
+.post__name {
+    max-width: 165px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .post__info {
@@ -42,6 +50,12 @@
     align-items: center;
     justify-content: space-between;
     padding: 11px 25px;
+    @include mobile-block {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    @include mobileXS(padding, 11px 10px 11px);
 }
 
 .post__meta {
@@ -73,22 +87,30 @@
     text-decoration: none;
     background: var(--color-white);
     border-radius: 5px;
+    margin-right: 20px;
+    @include mobile-block {
+        margin-right: 15px;
+        margin-top: 15px;
+    }
 }
 
-.post__tag ~ .post__tag {
-    margin-left: 20px;
+.post__tag:last-child {
+    margin-right: 0;
 }
 
 .post__title {
     padding: 37px 170px 17px 25px;
     background: rgba(18, 18, 18, 0.05);
     backdrop-filter: blur(55px);
+    @include mobile(padding, 30px 25px 17px 25px);
+    @include mobileXS(padding, 15px 10px);
 }
 
 .post__content {
     max-width: 1110px;
     margin: 0 auto;
     margin-top: 70px;
+    @include mobile(margin-top, 30px);
 }
 
 .post__author {
@@ -105,19 +127,49 @@
 .post__actions {
     margin-top: 45px;
     text-align: center;
+    @include mobileXS-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .post__btn ~ .post__btn {
     margin-left: 50px;
+    @include mobileXS-block {
+        margin-left: 0;
+        margin-top: 30px;
+    }
 }
 
 .post__social-act {
     margin-top: 100px;
     display: flex;
+    @include mobile-block {
+        margin-top: 50px;
+        justify-content: center;
+    }
+    @include mobileXS-block {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .post__share-social {
     margin-left: 60px;
+    @include mobileXS-block {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+}
+
+.post__rating-heading,
+.post__share-heading {
+    @include mobileXS-block {
+        text-align: center;
+    }
 }
 
 .post__rating-stars,

@@ -1957,6 +1957,13 @@ button.swiper-pagination-bullet {
   margin-right: 15px;
 }
 
+.post__name {
+  max-width: 165px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .post__info {
   position: absolute;
   bottom: 0;
@@ -2007,10 +2014,11 @@ button.swiper-pagination-bullet {
   text-decoration: none;
   background: var(--color-white);
   border-radius: 5px;
+  margin-right: 20px;
 }
 
-.post__tag ~ .post__tag {
-  margin-left: 20px;
+.post__tag:last-child {
+  margin-right: 0;
 }
 
 .post__title {
@@ -2990,6 +2998,34 @@ button.swiper-pagination-bullet {
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   }
 
+  .post__outer-meta {
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+    -webkit-align-items: flex-start;
+            align-items: flex-start;
+  }
+
+  .post__tag {
+    margin-right: 15px;
+    margin-top: 15px;
+  }
+
+  .post__title {
+    padding: 30px 25px 17px 25px;
+  }
+
+  .post__content {
+    margin-top: 30px;
+  }
+
+  .post__social-act {
+    margin-top: 50px;
+    -webkit-justify-content: center;
+            justify-content: center;
+  }
+
   .dev-goals__items {
     grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
     grid-auto-rows: 190px;
@@ -3079,6 +3115,53 @@ button.swiper-pagination-bullet {
 
   .news__excerpt {
     margin-top: 10px;
+  }
+
+  .post__brd-meta {
+    display: none;
+  }
+
+  .post__outer-meta {
+    padding: 11px 10px 11px;
+  }
+
+  .post__title {
+    padding: 15px 10px;
+  }
+
+  .post__actions {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-items: center;
+            align-items: center;
+  }
+
+  .post__btn ~ .post__btn {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .post__social-act {
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-items: center;
+            align-items: center;
+  }
+
+  .post__share-social {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
+  .post__rating-heading,
+  .post__share-heading {
+    text-align: center;
   }
 
   .dev-goals__items {
