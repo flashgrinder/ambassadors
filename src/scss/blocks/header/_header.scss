@@ -18,6 +18,7 @@
     background: var(--color-white);
     box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.07);
     backdrop-filter: blur(45px);
+    @include mobile(padding, 10px 0);
 }
 
 .header__body {

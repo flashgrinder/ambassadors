@@ -2930,6 +2930,14 @@ button.swiper-pagination-bullet {
     margin: 0 0 40px 0;
   }
 
+  .page {
+    padding-top: 72px;
+  }
+
+  .header__outer {
+    padding: 10px 0;
+  }
+
   .slider__arrow--prev {
     left: 15%;
   }
