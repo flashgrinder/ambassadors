@@ -3065,6 +3065,10 @@ button.swiper-pagination-bullet {
     padding-right: 10px;
   }
 
+  .button--search {
+    padding: 8px 35px;
+  }
+
   .slider__arrow--prev {
     left: 5%;
   }
@@ -3171,6 +3175,16 @@ button.swiper-pagination-bullet {
 
   .wysiwyg ul {
     padding-left: 20px;
+  }
+
+  .search__form {
+    -webkit-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .search__btn {
+    margin-left: 0;
+    margin-top: 30px;
   }
 
   .modal__body {

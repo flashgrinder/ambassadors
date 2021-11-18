@@ -2,6 +2,9 @@
     display: inline-flex;
     align-items: center;
     width: 100%;
+    @include mobileXS-block {
+        flex-direction: column;
+    }
 }
 
 .search__field {
@@ -34,6 +37,10 @@
 
 .search__btn {
     margin-left: -45px;
+    @include mobileXS-block {
+        margin-left: 0;
+        margin-top: 30px;
+    }
 }
 
 .search__count {

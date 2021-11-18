@@ -20,6 +20,7 @@
     line-height: 16px;
     font-weight: normal;
     padding: 8px 35px 8px 70px;
+    @include mobileXS(padding, 8px 35px);
 }
 
 .button--big {
