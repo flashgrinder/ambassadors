@@ -1583,6 +1583,23 @@ button.swiper-pagination-bullet {
   margin-top: 45px;
 }
 
+/* Map */
+
+.map__subtitle {
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.map__icon-info {
+  margin-right: 15px;
+}
+
+.map__svg-info {
+  display: block;
+}
+
 /* Team */
 
 .team__items {
