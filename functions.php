@@ -15,3 +15,5 @@
     include_once(__DIR__ . '/inc/custom_functions.php');
     /* Loadmore btn */
     include_once(__DIR__ . '/inc/loadmore_btn.php');
+    /* Post Type Ambassadors */
+    include_once(__DIR__ . '/inc/post-type_ambassadors.php');
