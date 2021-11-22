@@ -1600,6 +1600,10 @@ button.swiper-pagination-bullet {
   display: block;
 }
 
+.map__container .fm-scale a {
+  line-height: 31px;
+}
+
 /* Team */
 
 .team__items {
