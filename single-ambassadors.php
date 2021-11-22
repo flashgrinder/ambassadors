@@ -118,11 +118,18 @@
                     <?php the_field('ambassador_descr'); ?>
                 </div>
                 <div class="ambassador__social">
-                    <h3 class="ambassador__headline-social title title--small title--black title--w-regular">
-                        Социальные сети:
-                    </h3>
+                    <?php 
+                    
+                        $ambassador_insta = get_field('ambassador_insta'); 
+                        $ambassador_fb = get_field('ambassador_fb');
+
+                    ?>
+                    <?php if( ($ambassador_insta && !empty($ambassador_insta)) || ($ambassador_fb && !empty($ambassador_fb)) ): ?>
+                        <h3 class="ambassador__headline-social title title--small title--black title--w-regular">
+                            Социальные сети:
+                        </h3>
+                    <?php endif; ?>
                     <div class="ambassador__icons-social">
-                        <?php $ambassador_insta = get_field('ambassador_insta'); ?>
                         <?php if( $ambassador_insta && !empty($ambassador_insta) ): ?>
                             <a href="<?php echo esc_url( $team__member_insta ); ?>" class="ambassador__icon-social" target="_blank">
                                 <svg class="ambassador__svg-social" width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -133,7 +140,6 @@
                                 </svg>
                             </a>
                         <?php endif; ?>
-                        <?php $ambassador_fb = get_field('ambassador_fb'); ?>
                         <?php if( $ambassador_fb && !empty($ambassador_fb) ): ?>
                             <a href="<?php echo esc_url( $ambassador_fb ); ?>" class="ambassador__icon-social" target="_blank">
                                 <svg class="ambassador__svg-social" width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -155,10 +161,17 @@
                         
                         echo get_the_post_thumbnail( $post->ID, 'full', $default_attr ); ?>
                 </div>
-                <div class="ambassador__actions"></div>
-                    <a href="" class="ambassador__btn button button--green button--big">
-                        Скачать презентацию
-                    </a>
+                <div class="ambassador__actions">
+                    <?php 
+                        $ambassador_presentation = get_field('ambassador_presentation');
+                        if( $ambassador_presentation ): 
+                            $ambassador_presentation_url = $ambassador_presentation['url'];
+                            $ambassador_presentation_target = $ambassador_presentation['target'] ? $ambassador_presentation['target'] : '_self';
+                        ?>
+                            <a href="<?php echo esc_url( $ambassador_presentation_url ); ?>" target="<?php echo esc_attr( $ambassador_presentation_target ); ?>" class="ambassador__btn button button--green button--big">
+                                Скачать презентацию
+                            </a>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>

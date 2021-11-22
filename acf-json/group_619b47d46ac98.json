@@ -117,6 +117,37 @@
             "default_value": "rgba(0,0,0, 0.3)",
             "enable_opacity": 1,
             "return_format": "string"
+        },
+        {
+            "key": "field_619baf090a785",
+            "label": "Кнопка с презентацией",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_619bae970a784",
+            "label": "Ссылка на презентацию",
+            "name": "ambassador_presentation",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
         }
     ],
     "location": [
@@ -137,5 +168,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1637567104
+    "modified": 1637593135
 }
