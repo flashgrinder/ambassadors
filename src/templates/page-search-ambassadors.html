@@ -1,0 +1,51 @@
+{% include "partials/_header.html" %}
+
+<section class="search-ambassadors bg--white block-padding">
+    <div class="search-ambassadors__body container">
+        <h2 class="search-ambassadors__heading title title--large title--black title--w-bold title--uppercase title--indent">
+            Раздел выбора региона
+        </h2>
+        <form class="search__form" role="search" method="get" id="searchform" action="https://ambassadory.com/">
+            <div class="search__field">
+                <input class="search__input" type="search" value="" name="s" id="s" placeholder="Например: Саратовская область">
+            </div>
+        </form>
+        <div class="search-ambassadors__results">
+            <article class="search-ambassadors__item">
+                <a href="" class="search-ambassador__wrapper-link">
+                    <div class="search-ambassadors__pic">
+                        <img src="img/uploads/ambassador-logo.png" alt="" class="search-ambassadors__thumb">
+                    </div>
+                </a>
+                <div class="search-ambassadors__text">
+                    <h3 class="search-ambassadors__headline text text--normal text--black text--w-regular">
+                        Магнит
+                    </h3>
+                    <p class="search-ambassadors__descr text text--normal text--dark-gray text--w-light">
+                        Сеть продуктовых магазинов
+                    </p>
+                </div>
+            </article>
+            <article class="search-ambassadors__item">
+                <a href="" class="search-ambassador__wrapper-link">
+                    <div class="search-ambassadors__pic">
+                        <img src="img/uploads/news-img-thumb-2.jpg" alt="" class="search-ambassadors__thumb">
+                    </div>
+                </a>
+                <div class="search-ambassadors__text">
+                    <h3 class="search-ambassadors__headline text text--normal text--black text--w-regular">
+                        Магнит
+                    </h3>
+                    <p class="search-ambassadors__descr text text--normal text--dark-gray text--w-light">
+                        Сеть продуктовых магазинов
+                    </p>
+                </div>
+            </article>
+            <div class="search-ambassadors__no-found text text--large text--black text--w-bold">
+                По вашему запросу ничего не найдено.
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "partials/_footer.html" %}
