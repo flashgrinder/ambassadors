@@ -327,7 +327,7 @@
 <!-- /. Features -->
 
 <!-- Map -->
-<section class="map bg--white block-padding">
+<section class="map bg--white block-padding" id="map">
     <div class="map__body container">
         <h2 class="map__heading title title--large title--black title--w-bold title--uppercase title--indent">
             Карта амбассадоров целей устойчивого развития
