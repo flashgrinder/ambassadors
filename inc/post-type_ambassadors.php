@@ -21,7 +21,7 @@
             'show_in_rest'       => true,
             'menu_position'      => 4,
             'menu_icon'          => 'dashicons-money',
-            'supports'           => ['title','editor','thumbnail','author','custom-fields','revisions'],
+            'supports'           => ['title','editor','thumbnail','author','custom-fields','revisions', 'excerpt'],
             'has_archive'        => false,
             // 'taxonomies'          => ['stories'],
             'hierarchical'        => false,
