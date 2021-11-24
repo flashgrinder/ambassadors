@@ -11,8 +11,50 @@
     display: block;
 }
 
+.map__container .fm-scale {
+    top: 50%;
+    right: 0;
+    left: auto;
+    transform: translateY(-50%);
+}
+
 .map__container .fm-scale a {
-    line-height: 31px;
+    line-height: 35px;
+}
+
+.map__container .fm-scale .fm-scale-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.45);
+    border: 1px solid rgba(18, 18, 18, 0.4);
+    box-sizing: border-box;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+}
+
+
+.map__container .fm-scale .fm-scale-plus,
+.map__container .fm-scale .fm-scale-minus {
+    margin-right: 0;
+    font-weight: 300;
+    border: none;
+    width: 39px;
+    height: 41px;
+    border-radius: 5px;
+    border-bottom: none !important;
+}
+
+.map__container .fm-scale .fm-scale-plus {
+    order: -1;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.map__container .fm-scale .fm-scale-minus {
+    padding-top: 3px;
+    border-top: 3px solid solid rgba(0, 0, 0, 0.10);
+    border-radius: 0px 0px 5px 5px;
 }
 
 .map__container .fm-tooltip {
