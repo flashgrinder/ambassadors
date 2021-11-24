@@ -1,6 +1,7 @@
-<form class="search__form" role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
+<form class="search__form" role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>" aria-label="page-search">
     <div class="search__field">
         <input class="search__input" type="search" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="Что ищем?">
+        <input name="post_type" type="hidden" value="any" />
     </div>
     <button type="submit" value="Поиск" class="search__btn button button--green button--icon button--search">
         <div class="button__text">

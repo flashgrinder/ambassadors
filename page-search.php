@@ -7,7 +7,8 @@
         <h2 class="search__heading title title--large title--black title--w-bold title--uppercase title--indent">
             Поиск по сайту
         </h2>
-        <?php get_search_form(); ?>
+        <?php $args = ['aria_label' => 'page-search'] ?>
+        <?php get_search_form($args); ?>
     </div>
 </section>
 <!-- /. Search -->
