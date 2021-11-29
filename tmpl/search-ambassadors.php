@@ -11,17 +11,51 @@
                 <input type="hidden" name="taxonomy" value="regions" />
             </div>
         </form>
-        <div class="search-ambassadors__results">
-            <?php 
-                $args = array(
-                    // 'post_type'=> 'ambassadors',
-                    'taxonomy'=> 'regions',
-                    's'    => $s,
-                    'paged' => $paged,
-                    );
-                query_posts($args);
+        <div class="search-ambassadors__results" id="ambassadors-results">
+            <?php
+
+
+            $arNameTermsRegions = array();
+            $regions = get_terms('regions', 'field=name');
+            foreach ($regions as $term) {
+            	array_push($arNameTermsRegions, mb_strtolower($term->name));
+            }
+            $resultRegions = preg_grep("/".$s."/", $arNameTermsRegions);
+            $argsRegions1 = array(
+            	'post_type'      => 'ambassadors',
+            	's'              => $s,
+            	'posts_per_page' => -1,
+            );
+            $argsRegions2 = array (
+            	'post_type'      => 'ambassadors',
+            	'tax_query' => array(
+            		array(
+            			'taxonomy' => 'regions',
+            			'field' => 'name',
+            			'terms' => $resultRegions
+            		),
+            	),
+            );
+            $queryRegions1 = new WP_Query($argsRegions1);
+            $queryRegions2 = new WP_Query($argsRegions2);
+            $queryRegions = new WP_Query();
+            $queryRegions->posts = array_unique(array_merge($queryRegions1->posts, $queryRegions2->posts), SORT_REGULAR);
+            $queryRegions->post_count = count($queryRegions->posts);
+
+
+
+                // $args = array(
+                //     'post_type'=> 'ambassadors',
+                //     'taxonomy'=> 'regions',
+                //     's'    => $s,
+                //     'paged' => $paged,
+                //     );
+                // query_posts($args);
             ?>
-            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <?php
+            if ( $queryRegions->have_posts() ) :
+				while ( $queryRegions->have_posts() ) : $queryRegions->the_post();
+             ?>
                 <article class="search-ambassadors__item">
                     <a href="<?php the_permalink(); ?>" class="search-ambassador__wrapper-link">
                         <div class="search-ambassadors__pic" style="background: <?php $ambassador_color = get_field('ambassador_color', $post->ID); echo $ambassador_color; ?>">
@@ -30,7 +64,7 @@
                                     'class'	=> "search-ambassadors__thumb",
                                     'alt'   => get_the_title()
                                 ];
-                                
+
                                 echo get_the_post_thumbnail( $post->ID, 'full', $default_attr ) ?>
                         </div>
                     </a>
