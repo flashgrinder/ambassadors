@@ -23,7 +23,7 @@
             'menu_icon'          => 'dashicons-money',
             'supports'           => ['title','editor','thumbnail','author','custom-fields','revisions', 'excerpt'],
             'has_archive'        => false,
-            // 'taxonomies'          => ['stories'],
+            'taxonomies'          => ['regions'],
             'hierarchical'        => false,
             'rewrite'             => array('slug' => 'ambassadors', 'with_front' => false),
             'query_var'           => true

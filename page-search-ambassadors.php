@@ -10,7 +10,8 @@
         <form class="search__form" role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>" aria-label="search-ambassadors">
             <div class="search__field">
                 <input class="search__input" type="search" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="Например: Саратовская область">
-                <input name="post_type" type="hidden" value="ambassadors" />
+                <!-- <input name="post_type" type="hidden" value="ambassadors" /> -->
+                <input type="hidden" name="taxonomy" value="regions" />
             </div>
         </form>
     </div>

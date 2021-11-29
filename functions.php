@@ -17,3 +17,5 @@
     include_once(__DIR__ . '/inc/loadmore_btn.php');
     /* Post Type Ambassadors */
     include_once(__DIR__ . '/inc/post-type_ambassadors.php');
+    /* Taxanomies Cats Page */
+    include_once(__DIR__ . '/inc/taxanomies_regions.php');
