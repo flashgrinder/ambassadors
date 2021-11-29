@@ -14,7 +14,7 @@
         <div class="search-ambassadors__results" id="ambassadors-results">
             <?php
 
-
+            $s = mb_strtolower($s);
             $arNameTermsRegions = array();
             $regions = get_terms('regions', 'field=name');
             foreach ($regions as $term) {
@@ -26,6 +26,7 @@
             	's'              => $s,
             	'posts_per_page' => -1,
             );
+            echo $s;
             $argsRegions2 = array (
             	'post_type'      => 'ambassadors',
             	'tax_query' => array(

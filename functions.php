@@ -11,6 +11,8 @@
     include_once(__DIR__ . '/inc/actions.php');
     /* Filters */
     include_once(__DIR__ . '/inc/filters.php');
+    /* Ajax search */
+    include_once(__DIR__ . '/inc/ajax-search.php');
     /* Custom_functions */
     include_once(__DIR__ . '/inc/custom_functions.php');
     /* Loadmore btn */
