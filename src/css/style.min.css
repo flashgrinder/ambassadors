@@ -1719,18 +1719,18 @@ button.swiper-pagination-bullet {
   border-radius: 25px;
   max-width: 1024px;
   margin: 0 auto;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.12);
+  padding: 20px;
 }
 
 .map__container .russiaHtml5MapStateInfo a {
   text-decoration: none;
   color: var(--color-green-light);
-  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.12);
-  padding: 20px;
   -webkit-transform: color 0.2s ease, text-decoration 0.2s ease;
           transform: color 0.2s ease, text-decoration 0.2s ease;
 }
 
-.map__container .russiaHtml5MapStateInfo a {
+.map__container .russiaHtml5MapStateInfo a:hover {
   text-decoration: underline;
   color: var(--color-blue);
 }
