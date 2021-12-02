@@ -2454,6 +2454,7 @@ button.swiper-pagination-bullet {
 
 .ambassador__img {
   display: block;
+  height: auto;
 }
 
 .ambassador__actions {
