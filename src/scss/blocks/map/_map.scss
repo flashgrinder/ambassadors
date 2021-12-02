@@ -116,18 +116,15 @@
 
 .map__container .russiaHtml5MapStateInfo {
     text-align: center;
-    border: 1px solid var(color-gray);
-    border-radius: 25px;
     max-width: 1024px;
     margin: 0 auto;
-    box-shadow: 2px 2px 15px rgb(0 0 0 / 12%);
-    padding: 20px;
+    padding: 15px;
 }
 
 .map__container .russiaHtml5MapStateInfo a {
     text-decoration: none;
     color: var(--color-green-light);
-    transform: color .2s ease, text-decoration .2s ease;
+    translate: color .2s ease, text-decoration .2s ease;
 }
 
 .map__container .russiaHtml5MapStateInfo a:hover {
