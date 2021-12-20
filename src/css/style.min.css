@@ -1311,6 +1311,10 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
+.text-block__pic--logo {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
 .text-block__img {
   display: block;
   width: 100%;
@@ -1321,6 +1325,14 @@ button.swiper-pagination-bullet {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.text-block__img--logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .text-block__actions {

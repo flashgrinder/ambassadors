@@ -6,6 +6,38 @@
     <div class="text-block__info">
         <div class="text-block__descr">
             <h3 class="text-block__title title title--big title--black title--w-extrabold title--uppercase">
+                Гёте-Институт
+            </h3>
+            <div class="text-block__text text text--large text--dark-gray text--w-light">
+                Год Германии в России стал источником новых полезных импульсов для российско-германских отношений в различных сферах жизни. На протяжении этого года были реализованы многочисленные проекты и мероприятия, а также созданы новые альянсы для будущего сотрудничества немецких и российских партнёров в областях культуры, образования, общества, науки и экономики. 
+            </div>
+            <div class="text-block__text text text--large text--dark-gray text--w-light">
+                Разработкой и реализацией проектов Года Германии занимаются Посольство Федеративной Республики Германия в Москве, Гёте-Институт и Российско-Германская внешнеторговая палата, но и партнёры из России и Германии.
+            </div>
+            <div class="text-block__text text text--large text--dark-gray text--w-light">
+                Одним из проектов, получивших поддержку в рамках года Германии в России 2020/2021, стал проект Фонда регионального экономического развития «Инвестиции и Регионы» «Амбассадоры устойчивого развития».
+            </div>
+            <div class="text-block__text text text--large text--dark-gray text--w-light">
+                Сайт проекта создан при поддержке Гёте-Института в рамках Года Германии в России 2020/2021.
+            </div>
+        </div>
+        <div class="text-block__actions">
+            <a href="javascript:;" class="text-block__btn button button--green">
+                Присоединиться
+            </a>
+        </div>
+    </div>
+    <div class="text-block__pic text-block__pic--logo">
+        <img src="<?php echo STANDART_DIR; ?>img/about/about-img-1.jpg" alt="" class="text-block__img text-block__img--logo">
+    </div>
+</section>
+<!-- /. Text-block -->
+
+<!-- Text-block -->
+<section class="text-block text-block--about container bg--white">
+    <div class="text-block__info">
+        <div class="text-block__descr">
+            <h3 class="text-block__title title title--big title--black title--w-extrabold title--uppercase">
                 Для участников проекта
             </h3>
             <div class="text-block__text text text--large text--dark-gray text--w-light">
