@@ -21,11 +21,6 @@
                 Сайт проекта создан при поддержке Гёте-Института в рамках Года Германии в России 2020/2021.
             </div>
         </div>
-        <div class="text-block__actions">
-            <a href="javascript:;" class="text-block__btn button button--green">
-                Присоединиться
-            </a>
-        </div>
     </div>
     <div class="text-block__pic text-block__pic--logo">
         <img src="<?php echo STANDART_DIR; ?>img/about/about-img-1.jpg" alt="" class="text-block__img text-block__img--logo">
