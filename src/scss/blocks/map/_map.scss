@@ -62,18 +62,22 @@
 }
 
 .map__container .fm-tooltip {
-    max-width: 272px;
-    width: 100%;
+    max-width: 425px;
+    width: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.map__container .fm-tooltip-name {
+    padding: 10px 40px 10px 15px;
 }
 
 .map__container .fm-tooltip-frame {
-    background-color: rgba(255, 255, 255, 0.45);
-    backdrop-filter: blur(33px);
     border: none;
     overflow: hidden;
     padding: 0;
-    max-width: 272px;
-    border-radius: 13px;
+    max-width: 425px;
     width: 100%;
 }
 
@@ -96,18 +100,31 @@
 }
 
 .map__container .fm-tooltip-comment {
-    padding: 10px 5px;
-    background-color: rgba(229, 220, 220, 0.45);
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.map__container .fm-tooltip-comment p {
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.map__container .fm-tooltip-comment p:last-child {
+    border-bottom: none;
 }
 
 .map__container .fm-tooltip-comment span a {
-    color: var(--color-green-light);
+    color: rgba(18, 18, 18, 1);
+    text-decoration: none;
+}
+
+.map__container .fm-tooltip-comment span a:hover {
+    color: var(--color-blue);
     text-decoration: none;
 }
 
 .map__container .fm-tooltip-x {
     position: absolute;
-    top: 10px;
+    top: 12px;
     right: 10px;
     margin: 0;
     color: var(--color-white);
@@ -123,7 +140,7 @@
 
 .map__container .russiaHtml5MapStateInfo a {
     text-decoration: none;
-    color: var(--color-green-light);
+    color: rgba(18, 18, 18, 1);
     translate: color .2s ease, text-decoration .2s ease;
 }
 
