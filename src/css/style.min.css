@@ -1720,6 +1720,7 @@ button.swiper-pagination-bullet {
 
 .map__container .fm-tooltip-comment p:last-child {
   border-bottom: none;
+  margin-bottom: 0;
 }
 
 .map__container .fm-tooltip-comment span a {
