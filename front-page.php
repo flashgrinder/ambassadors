@@ -27,7 +27,7 @@
                                         </div>
                                     </div>
                                     <div class="text-block__actions">
-                                        <a href="javascript:;" class="text-block__btn button button--green">
+                                        <a href="javascript:;" class="text-block__btn button button--green" data-modal-trigger="modal-form">
                                             Принять участие
                                         </a>
                                     </div>
