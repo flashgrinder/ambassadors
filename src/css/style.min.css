@@ -2751,7 +2751,6 @@ button.swiper-pagination-bullet {
           align-items: center;
   overflow-y: auto;
   background-color: transparent;
-  padding-top: 100px;
   z-index: 999;
   top: 0;
   bottom: 0;
@@ -2824,7 +2823,7 @@ button.swiper-pagination-bullet {
 }
 
 .modal__field ~ .modal__field {
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 .modal__input {
@@ -2940,6 +2939,12 @@ button.swiper-pagination-bullet {
 }
 
 .modal__form .wpcf7-not-valid-tip {
+  position: absolute;
+  left: 50%;
+  bottom: -33px;
+  width: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   text-align: center;
   font-family: var(--font-rubik);
   font-size: 12px;
@@ -3401,8 +3406,8 @@ button.swiper-pagination-bullet {
     max-height: 190px;
   }
 
-  .modal__body {
-    max-width: 450px;
+  .modal__input {
+    padding: 15px 15px;
   }
 
   .footer__inner {
@@ -3574,7 +3579,6 @@ button.swiper-pagination-bullet {
 
   .modal__body {
     padding: 16px 15px 30px;
-    max-width: 320px;
   }
 
   .modal__actions .wpcf7-spinner {
