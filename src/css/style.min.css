@@ -2911,6 +2911,7 @@ button.swiper-pagination-bullet {
 }
 
 .modal .wpcf7 form .wpcf7-response-output {
+  display: none;
   font-family: var(--font-rubik);
   font-size: calc(14px + 2 * ((100vw - 768px) / 256));
   margin: 20px 0 0;
