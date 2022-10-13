@@ -9,6 +9,7 @@
 .wysiwyg h4,
 .wysiwyg h5,
 .wysiwyg h6 {
+    font-family: var(--font-montserrat);
     font-weight: 400;
     margin: 30px 0;
 }
@@ -61,10 +62,22 @@
     margin: 20px 0;
     font-size: responsive 14px 18px;
     font-range: 320px 1024px;
+    font-weight: 300;
 }
 
 .wysiwyg a {
     text-decoration: underline;
     color: var(--color-green-light);
     transition: ease .2s;
+}
+
+.wysiwyg strong {
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+}
+
+.wysiwyg td {
+    border: 1px solid var(--color-dark-gray);
+    padding: 10px;
+    min-width: 123px;
 }
