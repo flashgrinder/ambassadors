@@ -4,6 +4,11 @@
     border-radius: 25px 25px 0px 0px;
 }
 
+.post--page .post__header {
+    border-radius: 0;
+    overflow: auto;
+}
+
 .post__img {
     display: block;
     width: 100%;
@@ -104,6 +109,12 @@
     backdrop-filter: blur(55px);
     @include mobile(padding, 30px 25px 17px 25px);
     @include mobileXS(padding, 15px 10px);
+}
+
+.post--page .post__title {
+    padding: 0;
+    background: none;
+    backdrop-filter: none;
 }
 
 .post__content {

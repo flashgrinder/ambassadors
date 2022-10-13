@@ -2104,6 +2104,11 @@ button.swiper-pagination-bullet {
   border-radius: 25px 25px 0px 0px;
 }
 
+.post--page .post__header {
+  border-radius: 0;
+  overflow: auto;
+}
+
 .post__img {
   display: block;
   width: 100%;
@@ -2203,6 +2208,13 @@ button.swiper-pagination-bullet {
   background: rgba(18, 18, 18, 0.05);
   -webkit-backdrop-filter: blur(55px);
           backdrop-filter: blur(55px);
+}
+
+.post--page .post__title {
+  padding: 0;
+  background: none;
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
 }
 
 .post__content {
