@@ -35,7 +35,7 @@
             "min": 1,
             "max": 0,
             "layout": "block",
-            "button_label": "",
+            "button_label": "Добавить",
             "sub_fields": [
                 {
                     "key": "field_618cf247f9ec6",
@@ -52,7 +52,8 @@
                     },
                     "open": 0,
                     "multi_expand": 0,
-                    "endpoint": 0
+                    "endpoint": 0,
+                    "parent_repeater": "field_618cee65f9ec2"
                 },
                 {
                     "key": "field_618cf191f9ec3",
@@ -71,7 +72,8 @@
                     "placeholder": "",
                     "maxlength": "",
                     "rows": "",
-                    "new_lines": "br"
+                    "new_lines": "br",
+                    "parent_repeater": "field_618cee65f9ec2"
                 },
                 {
                     "key": "field_618cf1bbf9ec4",
@@ -90,7 +92,8 @@
                     "placeholder": "",
                     "maxlength": "",
                     "rows": "",
-                    "new_lines": "br"
+                    "new_lines": "br",
+                    "parent_repeater": "field_618cee65f9ec2"
                 },
                 {
                     "key": "field_618cf1eaf9ec5",
@@ -114,9 +117,60 @@
                     "max_width": "",
                     "max_height": "",
                     "max_size": "",
-                    "mime_types": ""
+                    "mime_types": "",
+                    "parent_repeater": "field_618cee65f9ec2"
+                },
+                {
+                    "key": "field_634d3c417b2ff",
+                    "label": "Модальное окно\/Ссылка",
+                    "name": "slider_slide_radio",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "modal": "Модальное окно",
+                        "link": "Ссылка"
+                    },
+                    "default_value": "modal : Модальное окно",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "save_other_choice": 0,
+                    "layout": "vertical",
+                    "parent_repeater": "field_618cee65f9ec2"
+                },
+                {
+                    "key": "field_634d3d4c7b300",
+                    "label": "Ссылка в кнопке",
+                    "name": "slider_slide_link",
+                    "type": "link",
+                    "instructions": "Укажите ссылку.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_634d3c417b2ff",
+                                "operator": "==",
+                                "value": "link"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "parent_repeater": "field_618cee65f9ec2"
                 }
-            ]
+            ],
+            "rows_per_page": 20
         },
         {
             "key": "field_619242695cd1f",
@@ -205,7 +259,7 @@
             "min": 0,
             "max": 0,
             "layout": "block",
-            "button_label": "",
+            "button_label": "Добавить",
             "sub_fields": [
                 {
                     "key": "field_618cfb260ef2f",
@@ -222,7 +276,8 @@
                     },
                     "open": 0,
                     "multi_expand": 0,
-                    "endpoint": 0
+                    "endpoint": 0,
+                    "parent_repeater": "field_618cf44e6b5fa"
                 },
                 {
                     "key": "field_618cfb3c0ef30",
@@ -246,7 +301,8 @@
                     "max_width": "",
                     "max_height": "",
                     "max_size": "",
-                    "mime_types": ""
+                    "mime_types": "",
+                    "parent_repeater": "field_618cf44e6b5fa"
                 },
                 {
                     "key": "field_618cfb640ef31",
@@ -265,7 +321,8 @@
                     "placeholder": "",
                     "maxlength": "",
                     "rows": "",
-                    "new_lines": "br"
+                    "new_lines": "br",
+                    "parent_repeater": "field_618cf44e6b5fa"
                 },
                 {
                     "key": "field_618cfb8d0ef32",
@@ -284,7 +341,8 @@
                     "placeholder": "",
                     "maxlength": "",
                     "rows": "",
-                    "new_lines": "br"
+                    "new_lines": "br",
+                    "parent_repeater": "field_618cf44e6b5fa"
                 },
                 {
                     "key": "field_618cfbaf0ef33",
@@ -300,7 +358,8 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "placeholder": ""
+                    "placeholder": "",
+                    "parent_repeater": "field_618cf44e6b5fa"
                 },
                 {
                     "key": "field_618cfc1e0ef34",
@@ -316,9 +375,11 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "placeholder": ""
+                    "placeholder": "",
+                    "parent_repeater": "field_618cf44e6b5fa"
                 }
-            ]
+            ],
+            "rows_per_page": 20
         },
         {
             "key": "field_618cfd048cdfd",
@@ -353,7 +414,7 @@
             "min": 0,
             "max": 0,
             "layout": "block",
-            "button_label": "",
+            "button_label": "Добавить",
             "sub_fields": [
                 {
                     "key": "field_618cfd038cdf7",
@@ -370,7 +431,8 @@
                     },
                     "open": 0,
                     "multi_expand": 0,
-                    "endpoint": 0
+                    "endpoint": 0,
+                    "parent_repeater": "field_618cfd038cdf6"
                 },
                 {
                     "key": "field_618cfd038cdf8",
@@ -394,7 +456,8 @@
                     "max_width": "",
                     "max_height": "",
                     "max_size": "",
-                    "mime_types": ""
+                    "mime_types": "",
+                    "parent_repeater": "field_618cfd038cdf6"
                 },
                 {
                     "key": "field_618cfd038cdf9",
@@ -413,7 +476,8 @@
                     "placeholder": "",
                     "maxlength": "",
                     "rows": "",
-                    "new_lines": "br"
+                    "new_lines": "br",
+                    "parent_repeater": "field_618cfd038cdf6"
                 },
                 {
                     "key": "field_618cfd038cdfa",
@@ -432,7 +496,8 @@
                     "placeholder": "",
                     "maxlength": "",
                     "rows": "",
-                    "new_lines": "br"
+                    "new_lines": "br",
+                    "parent_repeater": "field_618cfd038cdf6"
                 },
                 {
                     "key": "field_618cfd038cdfb",
@@ -448,7 +513,8 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "placeholder": ""
+                    "placeholder": "",
+                    "parent_repeater": "field_618cfd038cdf6"
                 },
                 {
                     "key": "field_618cfd038cdfc",
@@ -464,9 +530,11 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "placeholder": ""
+                    "placeholder": "",
+                    "parent_repeater": "field_618cfd038cdf6"
                 }
-            ]
+            ],
+            "rows_per_page": 20
         },
         {
             "key": "field_618d00f84f581",
@@ -501,7 +569,7 @@
             "min": 0,
             "max": 0,
             "layout": "block",
-            "button_label": "",
+            "button_label": "Добавить",
             "sub_fields": [
                 {
                     "key": "field_618d00cd20ebf",
@@ -518,7 +586,8 @@
                     },
                     "open": 0,
                     "multi_expand": 0,
-                    "endpoint": 0
+                    "endpoint": 0,
+                    "parent_repeater": "field_618d000d20ebc"
                 },
                 {
                     "key": "field_618d007a20ebd",
@@ -542,7 +611,8 @@
                     "max_width": "",
                     "max_height": "",
                     "max_size": "",
-                    "mime_types": ""
+                    "mime_types": "",
+                    "parent_repeater": "field_618d000d20ebc"
                 },
                 {
                     "key": "field_618d00ae20ebe",
@@ -558,9 +628,11 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "placeholder": ""
+                    "placeholder": "",
+                    "parent_repeater": "field_618d000d20ebc"
                 }
-            ]
+            ],
+            "rows_per_page": 20
         }
     ],
     "location": [
@@ -581,5 +653,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1636975442
+    "modified": 1666006622
 }

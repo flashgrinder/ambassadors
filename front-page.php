@@ -12,6 +12,8 @@
                         $slider__slide_title = get_sub_field('slider_slide_title');
                         $slider__slide_text = get_sub_field('slider_slide_text');
                         $slider__slide_img = get_sub_field('slider_slide_img');
+                        $slider__slide_radio = get_sub_field('slider_slide_radio');
+                        $slider__slide_link = get_sub_field('slider_slide_link');
                     
                     ?>
                         <div class="slider__swiper-slide swiper-slide">
@@ -27,9 +29,16 @@
                                         </div>
                                     </div>
                                     <div class="text-block__actions">
+                                    <?php if( $slider__slide_radio == 'modal' ): ?>
                                         <a href="javascript:;" class="text-block__btn button button--green" data-modal-trigger="modal-form">
                                             Принять участие
                                         </a>
+                                    <?php endif; ?>
+                                    <?php if( $slider__slide_radio == 'link' ): ?>
+                                        <a href="<?php echo $slider__slide_link['url']; ?>" class="text-block__btn button button--green" target="<?php echo esc_attr( $slider__slide_link['target'] ? $slider__slide_link['target'] : '_self' ); ?>">
+                                            <?php echo esc_html($slider__slide_link['title']); ?>
+                                        </a>
+                                    <?php endif; ?>
                                     </div>
                                 </div>
                                 <div class="text-block__pic">
