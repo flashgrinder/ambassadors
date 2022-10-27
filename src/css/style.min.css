@@ -3128,6 +3128,34 @@ button.swiper-pagination-bullet {
   margin-top: 5px;
 }
 
+/* Devsite */
+
+.devsite {
+  padding: 15px;
+  background: var(--color-white-milk);
+}
+
+.devsite__outer {
+  text-align: center;
+}
+
+.devsite__link {
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-align-items: center;
+          align-items: center;
+  grid-gap: 20px;
+  text-decoration: none;
+  color: var(--color-black);
+  font-size: 12px;
+}
+
+.devsite__logo,
+.devsite__logo-img {
+  display: block;
+  max-width: 30px;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1366px) {
