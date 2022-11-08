@@ -1,0 +1,25 @@
+.decor {
+    position: fixed;
+    pointer-events: none;
+    user-select: none;
+    z-index: 1;
+    @include mobile(display, none);
+}
+
+.decor--left {
+    top: 20%;
+    transform: translateY(-20%);
+}
+
+.decor--right {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.decor__svg {
+    display: block;
+    max-width: 100px;
+    width: 100%;
+    @include tablet(max-width, 50px);
+}
