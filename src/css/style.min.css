@@ -2729,6 +2729,10 @@ button.swiper-pagination-bullet {
   min-width: 125px;
 }
 
+.wysiwyg table {
+  font-weight: 300;
+}
+
 /* Search */
 
 .search__form {
